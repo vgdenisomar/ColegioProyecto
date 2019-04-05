@@ -1,0 +1,178 @@
+.hero{
+  display:flex;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  height:100vh;
+  min-height: 520px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color:#fff;
+  text-align:center;
+  justify-content: center;
+  align-items:center;
+  background-image: url('../img/personalhero1.jpg');
+}
+
+img{
+  width: 80px;
+  height: 57px;
+  position:relative;
+  padding: 0px
+}
+
+.datagrid{
+   font: normal 12px/150% Arial, Helvetica, sans-serif;
+   background: none;
+   -webkit-border-radius: 11px;
+   -moz-border-radius: 11px;
+   border-radius: 11px;
+   margin: 3%;
+   margin-top: 1%;
+   overflow-x: scroll;
+    position: relative;
+}
+
+table{
+  text-align: inherit;
+  margin: 0 auto;
+}
+
+.datagrid table td, .datagrid table th {
+  padding: 5px 10px;
+}
+
+.datagrid table thead th {
+    background-color: black;
+    color: white;
+   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#8C8C8C', endColorstr='#7D7D7D');
+   font-size: 17px;
+   font-weight: bold;
+   border-left: 1px solid #A3A3A3;
+}
+
+.datagrid table thead th:first-child{
+   border: none;
+}
+
+.datagrid table tbody td{
+   color: #7D7D7D;
+   border-left: 3px solid #DBDBDB;
+   font-size: 12px;font-weight: normal;
+}
+
+.datagrid table tbody .alt td{
+  background-color:#8C8C8C;
+  color:#0A0A0A;
+}
+
+.datagrid table tbody td:first-child{
+   border-left: none;
+}
+
+.datagrid table tbody tr:last-child td{
+   border-bottom: none;
+}
+
+body {
+    background-color: white;
+    color: #FFF;
+    font-family: 'Montserrat', 'Arial', 'Helvetica', sans-serif;
+    margin:0px;
+    padding:0px;
+}
+
+
+h1{
+  font-size: 50px;
+  color: white;
+}
+
+h2{
+  color: white;
+  text-align: center;
+  background-color: #0009;
+}
+
+header {
+  position: relative;
+  padding: 0px;
+  color: #fff;
+  background-image: url(../img/uns.jpg);
+  width: 100%;
+  height: 100vh;
+}
+
+.h11{
+  display: flex;
+  justify-content: center;
+ text-align: center;
+  color: white;
+  text-shadow: 1px 5px 2px black;
+    margin-top: -180px;
+}
+
+.h12{
+  display: flex;
+  justify-content: center;
+ text-align: center;
+  color: black;
+}
+
+
+  footer {
+    text-align: center;
+    margin-top: -30px;
+  }
+  blockquote {
+
+    position: relative;
+    display: inline-block;
+    background: #eee;
+    padding: 40px 30px 30px 60px;
+    border-radius: 10px;
+    font-family: 'Bitter', serif;
+    color: #333;
+    text-align: left;
+    box-shadow: 1px 1px 1px #999, 2px 2px 1px #999, 3px 3px 1px #999;
+    transition-duration: 0.3s;
+  }
+  blockquote span.author {
+    position: relative;
+    display: block;
+    text-align: right;
+    margin-top: 5px;
+    color: #999;
+  }
+  blockquote span.author i {
+    position: relative;
+    background: #eee;
+    padding-left: 5px;
+    font-style: italic;
+    z-index: 5;
+  }
+  blockquote span.author::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #ccc;
+    z-index: 1;
+  }
+  blockquote:hover {
+    box-shadow: 1px 1px 5px #999, 2px 2px 6px #999, 3px 3px 7px #999;
+  }
+  blockquote::before {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    content: "\"";
+    font-family: 'Bitter', serif;
+    font-size: 120px;
+    color: #999;
+  }

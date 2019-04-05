@@ -1,0 +1,396 @@
+body{
+  background-color: white;
+  font-size: 16px;
+}
+h1{
+  color: rgb(1, 27, 103);
+}
+
+p{
+  display: inline-block;
+  line-height: 1.5;
+  color:black;
+  margin: 1em;
+  padding:1em 1em;
+  text-align: center;
+}
+
+
+
+
+article{
+  display: grid;
+  background-color:rgb(250, 188, 67);
+  max-width: 900px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: -200px;
+}
+
+article div{
+  background-color: rgb(164, 64, 208);
+  padding:1em 0.75em;
+
+}
+article div h2 {
+  margin:1em;
+  background-color: rgba(255,255,255,0.7);
+  text-shadow: 1px 1px 2px #000;
+}
+
+h2{
+  color: rgb(0, 0,0);
+  position:absolute;
+  text-align:center;
+  font-size: 2em;
+  text-transform: capitalize;
+  display: inline-block;
+  margin: 1em 2em 1em 2em;
+  padding: 1em 2em 1em 2em;
+  margin: 0px;
+  padding: 0.5em 1em;
+  text-align:left;
+  text-align: center;
+
+}
+
+.heropanel{
+  display:flex;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  height:75vh;
+  min-height: 520px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color:#fff;
+  text-align:center;
+  justify-content: center;
+  align-items:center;
+}
+
+.heropanel2{
+  position: relative;
+  margin:0px;
+  width:100%;
+  min-height: 720px;
+  background-color: white;
+  background-image: url("nutricion.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.heropanel3{
+  position: relative;
+  margin:0px;
+  width:100%;
+  min-height: 720px;
+  background-color: white;
+  background-image: url("finanzas1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.heropanel4{
+  position: relative;
+  margin:0px;
+  width:100%;
+  min-height: 720px;
+  background-color: white;
+  background-image: url("hotelera.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/*
+article, h1{
+  font-size: 10em;
+}
+*/
+
+nav {
+  background-color: #0008;
+  padding: 0px;
+  margin: 0px;
+  position: fixed;
+  width:100%;
+  top:0px;
+  z-index:1000;
+}
+
+
+nav ul{
+  list-style: none;
+  text-align:center;
+  padding: 0px;
+  margin: 0px;
+}
+
+nav ul li{
+  display:inline;
+  transition: 0.8s all;
+}
+
+nav ul li a{
+  position: relative;
+}
+
+.hb nav ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  max-height: 1000px;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in;
+}
+.hb nav ul.collapsed {
+  max-height: 0.01px;
+  transition: max-height 0.25s ease-in;
+  padding: 0px;
+}
+
+.li1{
+  margin-top: 2%;
+}
+
+.hb nav ul li a {
+  box-sizing: border-box;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  width: 100%;
+}
+header {
+  position: relative;
+  padding: 0px;
+  color: #fff;
+  background-image: url(car.jpg);
+  width: 100%;
+  height: 100vh;
+
+}
+
+.pp1 {
+  position: relative;
+  padding: 0px;
+  color: #fff;
+  background-image: url("infromatica.jpg");
+  width: 100%;
+  height: 101vh;
+  background-size: cover;
+
+
+}
+
+.pp2 {
+  position: relative;
+  padding: 0px;
+  color: #fff;
+  background-image: url("nutricion.jpg");
+  width: 100%;
+  height: 101vh;
+  background-size: cover;
+
+
+}
+
+.pp3 {
+  position: relative;
+  padding: 0px;
+  color: #fff;
+  background-image: url("finanzas1.png");
+  width: 100%;
+  height: 101vh;
+  background-size: cover;
+
+
+}
+
+.pp4 {
+  position: relative;
+  padding: 0px;
+  color: #fff;
+  background-image: url("hotelera.jpg");
+  width: 100%;
+  height: 101vh;
+  background-size: cover;
+
+
+}
+
+div h1 {
+  font-size: 50px;
+  margin: 0px;
+  padding: 0.5em 1em;
+  text-align:left;
+  padding-top: 185px;
+  text-align: center;
+}
+
+img{
+  width: 80px;
+  height: 57px;
+  position:relative;
+  padding: 0px
+
+}
+
+.hero{
+  display:flex;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  height:75vh;
+  min-height: 520px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color:#fff;
+  text-align:center;
+  justify-content: center;
+  align-items:center;
+
+}
+
+.h11{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 5px 2px black;
+}
+
+section h1{
+  font-size: 50px;
+  margin: 0px;
+  padding: 0.5em 1em;
+  text-align:left;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.btnHB {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  width: 33px;
+  height: 33px;
+  margin: 0px;
+  position: absolute;
+  top: 1px;
+  right: 3px;
+}
+
+.btnHB div {
+  box-sizing: border-box;
+  height: 4px;
+  margin: 0px;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+
+@media (min-width:1025px) {
+  .btnHB {
+    display: none !important;
+  }
+  .hb nav ul {
+    box-sizing: border-box;
+    display: flex !important;
+    max-height: 100% !important;
+    opacity: 1 !important;
+    width: 100%;
+    justify-content: space-evenly;
+    padding-bottom: 1em;
+    max-width: 1025px;
+    margin: 0px center;
+  }
+
+  article{
+    margin-left: 20%;
+    margin-top: -200px;
+  }
+
+  nav ul li a:before{
+    content: '';
+    width: 0px;
+    height: 4px;
+    background: #11FF00;
+    position: absolute;
+    top: 120%;
+    left: 0;
+    transition: .5s;
+    mix-blend-mode: multiply;
+  }
+
+  nav ul li a:after{
+    content: '';
+    width: 0px;
+    height: 4px;
+    background: #fff;
+    position: absolute;
+    top: 120%;
+    right: 0;
+    transition: .5s;
+    mix-blend-mode: multiply;
+  }
+
+  nav ul li:hover a:before{
+    width: 50%;
+    transform: translateX(100%);
+  }
+  nav ul li:hover a:after{
+    width: 50%;
+    transform: translateX(-100%);
+  }
+
+  .prlx1{
+    width: 101%;
+  }
+
+  .hero{
+  }
+
+  h1{
+    text-align: center;
+    padding-top: 180px;
+  }
+  section h1{
+    padding-top: 150px;
+  }
+  li{
+    padding-bottom: 0px;
+    margin-left: -70px;
+    margin-right: -70px;
+  }
+  ul{
+    margin-top: -9px !important;
+  }
+  nav{
+    height: 90px;
+  }
+}
+
+nav ul li a{
+  display:inline-block;
+  padding: 1em 1.25em;
+
+}
+
+article ul li{
+  list-style-type: none;
+}
+
+article ul li a{
+  color:white;
+  text-decoration: none;
+  padding:0.75em 5em;
+}

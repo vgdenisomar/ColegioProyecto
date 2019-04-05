@@ -1,0 +1,71 @@
+.hero{
+  display:flex;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  height:75vh;
+  min-height: 520px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color:#fff;
+  text-align:center;
+  justify-content: center;
+  align-items:center;
+
+}
+.hero h1{
+
+}
+.herotext {
+  max-width: 480px;
+  width:100%;
+  margin-top:3.5em;
+  padding:1em;
+}
+
+.prlx{
+  background-color: rgba(255,0,0,1);
+  margin: 0px -15px !important;
+  background-image: url('../img/first0.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  text-shadow: 1px 1px 1px #fff;
+  width: 100%;
+  height: 100vh;
+}
+
+.prlx1{
+  margin: 0px 0px !important;
+  background-image: url('../img/excelenciaa.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  text-shadow: 1px 1px 1px #fff;
+  height: 100vh;
+  width: 100%;
+  text-align: justify;
+}
+
+.prlx2{
+  margin: 0px 0px !important;
+  background-image: url('../img/exito.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  text-shadow: 1px 1px 1px #fff;
+  height: 100vh;
+  width: 100%;
+  text-align: justify;
+}
+
+.h11{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}

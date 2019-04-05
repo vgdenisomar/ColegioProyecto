@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario Contáctenos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/forms.css">
+
+  </head>
+  <body >
+   <div class="hb">
+        <nav>
+          <div>
+              <div class="div1 col-s-12 col-10 col-offset-2">
+                <ul class="collapsed" id="hbtnul">
+                  <li class="li1"><a href="flex.html">Conócenos</a></li>
+                  <li class="li1"><a href="../Carreras/carreras.html">Carreras</a></li>
+                  <li class=""><a href="../menu.html"><img class="img2" src="logo.png"></a></li>
+                  <li class="li1"><a href="../ExcelenciaPersonal/personal.html">Personal</a></li>
+                  <li class="li1"><a href="../ExcelenciaPersonal/sociedadpadres.html">Sociedad de padres</a></li>
+                </ul>
+                <div class="btnHB">
+                  <div>&nbsp;</div>
+                  <div>&nbsp;</div>
+                  <div>&nbsp;</div>
+                </div>
+                <div class="line"></div>
+              </div>
+        </div>
+        </nav>
+      </div>
+      <script src="java/hb.js"></script>
+
+  <div >
+  <h1>Calendario de Matricula</h1>
+  <h2>Link de referencia para ver las fechas programadas: <a href="matricula.jpg" target="_blank">Fechas</a> </h2>
+  </div>
+    <header><h1 class="col-s-12 col-m-8 col-6 col-offset-m-3">Quieres saber mas Información?, Escribenos.</h1></header>
+    <section>
+      <form id="formToValidate" action="FormularioColegio.html" method="post" class="col-s-12 col-6 col-offset-3">
+        <fieldset class="row">
+          <label class="col-offset-m-1" for="txtNombre">Nombre Completo: </label>
+          <input class="col-s-12" type="text" name="txtNombre" id="txtNombre" placeholder="Escriba el nombre completo" type="text"/>
+          <span class="error" id="txtNombreError"></span>
+        </fieldset>
+        <br><br>
+        <fieldset class="row">
+          <label class="col-offset-m-1" for="txtEmail">Correo Electrónico: </label>
+          <input class="col-s-12" type="txtCorreo" name="txtCorreo" id="txtCorreo" placeholder="tucorreo@electronico.com" type="email"/>
+          <span class="error" id="txtCorreoError"></span>
+        </fieldset>
+        <br><br>
+        <fieldset class="row">
+          <label class="col-offset-m-1" for="txtTelefono">Teléfono: </label>
+          <input class="col-s-12" type="txtTelefono" name="txtTelefono" id="txtTelefono" placeholder="XXXX-XXXX" type="number"/>
+          <span class="error" id="txtTelefonoError"></span>
+        </fieldset>
+        <br><br><br>
+        <button class="col-s-12 col-m-4 col-3-offset-m-8" type="submit" id="btnGuardar">Guardar</button>
+      </form>
+    </section>
+    <script src="Validaciones.js"></script>
+  </body>
+</html>

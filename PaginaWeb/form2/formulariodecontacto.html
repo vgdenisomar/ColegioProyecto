@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="formulario.css" />
+    <link rel="stylesheet" href="prueba.css" />
+    <link rel="stylesheet" href="grid.css" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <div class="hb">
+      <nav>
+        <div class="row">
+            <div class="div1 col-s-12 col-10 col-offset-2">
+              <ul class="collapsed" id="hbtnul">
+                <li class="li1"><a href="../Formulario/flex.html">Conócenos</a></li>
+                <li class="li1"><a href="../Carreras/carreras.html">Carreras</a></li>
+                <li class=""><a href="../menu.html"><img src="logo.png"></a></li>
+                <li class="li1"><a href="../ExcelenciaPersonal/personal.html">Personal</a></li>
+                <li class="li1"><a href="../ExcelenciaPersonal/sociedadpadres.html">Sociedad de padres</a></li>
+              </ul>
+              <div class="btnHB">
+                <div>&nbsp;</div>
+                <div>&nbsp;</div>
+                <div>&nbsp;</div>
+              </div>
+              <div class="line"></div>
+            </div>
+      </div>
+      </nav>
+    </div>
+    <script src="java/hb.js"></script>
+    <form   id="formToValidate" action="formulariodecontacto.html" method="post" id="contact_form">
+    <div class="name">
+      <label for="name"></label>
+      <input type="text" placeholder="Mi Nombre es" name="txtNombre" id="txtNombre" required>
+    </div>
+    <div class="email">
+      <label for="email"></label>
+      <input type="email" placeholder="Mi e-mail es" name="txtEmail" id="txtEmail" required>
+    </div>
+    <div class="telephone">
+      <label for="name"></label>
+      <input type="number" placeholder="Mi numero es" name="txtTelefono" id="txtTelefono" required>
+    </div>
+    <div class="subject">
+      <label for="subject"></label>
+      <select placeholder="Aportacion a realizar" name="subject" id="subject_input" required>
+        <option disabled hidden selected>Aportacion a realizar</option>
+        <option>Becar a un estudiante</option>
+        <option>Aportar donaciones al instituto</option>
+        <option>Dar Mensualidad a Estudiante</option>
+        <option>Otros</option>
+      </select>
+    </div>
+    <div class="message">
+      <label for="message"></label>
+      <textarea name="message" placeholder="Mi comentario..." id="message_input" cols="30" rows="5" required></textarea>
+    </div>
+    <div>
+      <input type="submit" id="form_button" />
+    </div>
+  </form>
+  </body>
+</html>
