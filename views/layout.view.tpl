@@ -6,9 +6,9 @@
             <meta name="viewport" content="width=device-width, initial-scale=1"/>
             <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
             <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+            <link rel="stylesheet" href="PaginaWeb/css/style.css">
             <link rel="stylesheet" href="public/css/papier.css" />
             <link rel="stylesheet" href="public/css/estilo.css" />
-            <link rel="stylesheet" href="PaginaWeb/css/style.css">
             <link rel="stylesheet" href="PaginaWeb/css/grid.css">
             <link rel="stylesheet" href="PaginaWeb/css/hero.css">
             <link rel="stylesheet" href="PaginaWeb/css/fonts.css">
@@ -26,7 +26,7 @@
                       <li class="li1"><a href="Formulario/flex.html">Conócenos</a></li>
                       <li class="li1"><a href="Carreras/carreras.html">Carreras</a></li>
                       <li class="li1"><a href="ExcelenciaPersonal/personal.html">Personal</a></li>
-                      <li class=""><a href="index.php?page=home"><img src="img/logo.png"></a></li>
+                      <li class=""><a href="index.php?page=home"><img src="PaginaWeb/img/logo.png"></a></li>
                       <li class="li1"><a href="ExcelenciaPersonal/sociedadpadres.html">Sociedad de padres</a></li>
                       <li class="li1"><a href="index.php?page=productos">Donacion</a></li>
                       <li class="li1"><a href="index.php?page=login">Iniciar Sesion</a></li>
