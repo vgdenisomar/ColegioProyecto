@@ -28,8 +28,8 @@
                       <li class="li1"><a href="PaginaWeb/ExcelenciaPersonal/personal.html">Personal</a></li>
                       <li class=""><a href="index.php?page=home"><img src="PaginaWeb/img/logo.png"></a></li>
                       <li class="li1"><a href="PaginaWeb/ExcelenciaPersonal/sociedadpadres.html">Sociedad de padres</a></li>
-                      <li class="li1"><a href="index.php?page=productos">Donacion</a></li>
-                      <li class="li1"><a href="index.php?page=login">Iniciar Sesion</a></li>
+                      <li class="li1"><a href="index.php?page=productos">Donación</a></li>
+                      <li class="li1"><a href="index.php?page=login">Iniciar Sesión</a></li>
                     </ul>
                     <div class="btnHB">
                       <div>&nbsp;</div>

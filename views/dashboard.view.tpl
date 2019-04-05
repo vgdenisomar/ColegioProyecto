@@ -1,8 +1,8 @@
 <section>
-  <h1>Simple PHP MVC</h1>
+  <h1>Seguridad</h1>
 </section>
 <section>
-  <h2>Seguridad</h2>
+  <h2>Tablas</h2>
   <div>
     <ul>
       {{if rol_prd}}
