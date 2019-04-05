@@ -23,11 +23,11 @@
               <div class="row">
                   <div class="div1 col-s-12 col-10 col-offset-2">
                     <ul class="collapsed" id="hbtnul">
-                      <li class="li1"><a href="Formulario/flex.html">Conócenos</a></li>
-                      <li class="li1"><a href="Carreras/carreras.html">Carreras</a></li>
-                      <li class="li1"><a href="ExcelenciaPersonal/personal.html">Personal</a></li>
+                      <li class="li1"><a href="PaginaWeb/Formulario/flex.html">Conócenos</a></li>
+                      <li class="li1"><a href="PaginaWeb/Carreras/carreras.html">Carreras</a></li>
+                      <li class="li1"><a href="PaginaWeb/ExcelenciaPersonal/personal.html">Personal</a></li>
                       <li class=""><a href="index.php?page=home"><img src="PaginaWeb/img/logo.png"></a></li>
-                      <li class="li1"><a href="ExcelenciaPersonal/sociedadpadres.html">Sociedad de padres</a></li>
+                      <li class="li1"><a href="PaginaWeb/ExcelenciaPersonal/sociedadpadres.html">Sociedad de padres</a></li>
                       <li class="li1"><a href="index.php?page=productos">Donacion</a></li>
                       <li class="li1"><a href="index.php?page=login">Iniciar Sesion</a></li>
                     </ul>
