@@ -48,6 +48,9 @@ case "logout":
 case "productos":
     include_once "controllers/productos.control.php";
     die();
+case "pago":
+      include_once "controllers/pago.control.php";
+    die();
 }
 
 //Este switch se encarga de todo el enrutamiento que ocupa login
@@ -102,11 +105,6 @@ case "programa":
 case "productos":
     ($logged)?
       include_once "controllers/productos.control.php":
-      mw_redirectToLogin($_SERVER["QUERY_STRING"]);
-    die();
-case "producto":
-    ($logged)?
-      include_once "controllers/producto.control.php":
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
     die();
 }
