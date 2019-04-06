@@ -27,7 +27,7 @@ function run()
     $viewData = Array();
     $viewData["carrito"]=obetenerCarrito();
     $viewData["productos"] =  obtenerProductos();
-    $viewData["nombre"] = "Productos ABC";
+    $viewData["nombre"] = "Productos a Donar";
     renderizar("productos", $viewData);
 }
   run();
