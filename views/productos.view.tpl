@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <style>
       *{
         box-sizing: border-box;
@@ -65,10 +64,6 @@
     </style>
 <br><br><br><br>
 <h1>Donaciones</h1>
-=======
-<br><br><br><br><br>
-<h1>Gestión de Productos</h1>
->>>>>>> a9767f5664264eb2dc52bad481ae7beb33e1f530
 <h2>{{nombre}}</h2>
 <section class="row">
    <div class="productHolder">

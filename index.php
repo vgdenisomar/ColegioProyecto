@@ -107,8 +107,6 @@ case "productos":
       include_once "controllers/productos.control.php":
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
     die();
-<<<<<<< HEAD
-=======
 case "producto":
     ($logged)?
       include_once "controllers/producto.control.php":
@@ -124,7 +122,6 @@ case "mantenimiento":
       include_once "controllers/mantenimiento.control.php":
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
     die();
->>>>>>> a9767f5664264eb2dc52bad481ae7beb33e1f530
 }
 
 addToContext("pageRequest", $pageRequest);
