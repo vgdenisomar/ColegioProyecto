@@ -175,7 +175,7 @@ button{
 
       <div class="row">
         <div class="col-7 col-offset-5 center">
-          <button class="btn1" type="button" name="btnProcesar">Pagar</button>
+          <button class="btn1" type="submit" name="btnProcesar">Pagar</button>
           &nbsp;
         <a href="index.php?page=productos"><button class="btn2" type="button" name="btnCancelar">Cancelar</button></a>
         </div>
