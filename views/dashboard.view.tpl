@@ -1,8 +1,8 @@
 <section>
-  <h1>Simple PHP MVC</h1>
+  <h1>Seguridad</h1>
 </section>
 <section>
-  <h2>Seguridad</h2>
+  <h2>Tablas</h2>
   <div>
     <ul>
       {{if rol_prd}}
@@ -10,6 +10,7 @@
       {{endif rol_prd}}
       <li><a href="index.php?page=roles">Roles</a></li>
       <li><a href="index.php?page=programas">Funciones</a></li>
+      <li><a href="index.php?page=mantenimientos">Mantenimientos</a></li>
     </ul>
   </div>
 </section>
