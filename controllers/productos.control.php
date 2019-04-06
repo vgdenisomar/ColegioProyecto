@@ -35,7 +35,7 @@ function run()
       $viewData["count"]=false;
     }
     $viewData["productos"] =  obtenerProductos();
-    $viewData["nombre"] = "Productos ABC";
+    $viewData["nombre"] = "Productos a Donar";
     renderizar("productos", $viewData);
 }
   run();
