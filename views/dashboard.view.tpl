@@ -10,6 +10,7 @@
       {{endif rol_prd}}
       <li><a href="index.php?page=roles">Roles</a></li>
       <li><a href="index.php?page=programas">Funciones</a></li>
+      <li><a href="index.php?page=mantenimientos">Mantenimientos</a></li>
     </ul>
   </div>
 </section>

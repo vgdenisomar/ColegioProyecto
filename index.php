@@ -109,6 +109,16 @@ case "producto":
       include_once "controllers/producto.control.php":
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
     die();
+case "mantenimientos":
+    ($logged)?
+      include_once "controllers/mantenimientos.control.php":
+      mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+    die();
+case "mantenimiento":
+    ($logged)?
+      include_once "controllers/mantenimiento.control.php":
+      mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+    die();
 }
 
 addToContext("pageRequest", $pageRequest);
