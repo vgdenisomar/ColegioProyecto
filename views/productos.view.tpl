@@ -207,15 +207,14 @@ button{
 
 
 <br><br><br><br>
-<h1>Donaciones</h1>
-<h2>{{nombre}}</h2>
+<h1>Catologo de Donaciones</h1>
 <section class="row">
+     {{if count}}
      <div class="carritoHolder">
      <div class="carritoItem">
        <table>
          <thead>
            <tr>
-             <th>Código</th>
              <th>Nombre</th>
              <th>Precio</th>
              <th>Cantidad</th>
@@ -224,7 +223,6 @@ button{
         {{foreach carrito}}
          <tbody>
            <tr>
-             <td><span>{{codProd}} </span></td>
              <td><span>{{nomProd}}</span></td>
              <td><span class="precio"> {{precioProd}}</span></td>
              <td><span> {{cant}}</span></td>
@@ -239,14 +237,14 @@ button{
        <button class="btn2" type="submit" name="btnCancelar">Cancelar Pedido</button>
      </form>
    </div>
-
+   {{endif count}}
    <br>
    <br>
 
         <div class="productHolder">
   {{foreach productos}}
   <div class="card">
-        <form action="index.php?page=productos&mode={{mode}}" method="post">
+        <form action="index.php?page=productos&mode={{mode}}" method="POST">
           <input type="hidden" name="cod" id="cod" value="{{codProd}}"/>
           <h2 style="color:#738AFD">{{nomProd}}</h2>
           <h3 style="color:#000">{{descProd}}</h3>

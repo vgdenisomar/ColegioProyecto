@@ -135,16 +135,16 @@ button{
                 <td class="desc">{{descProd}}</td>
                 <td class="unit">{{precioProd}}</td>
                 <td class="qty">{{cant}}</td>
-                <td class="total">{{precioProd}}</td>
+                <td class="total">{{subtotal}}</td>
               </tr>
       {{endfor carrito}}
       <tr>
         <td colspan="4" class="grand"> TOTAL A PAGAR</td>
-        <td class="grand">L16,100.00</td>
+        <td class="grand">{{total}}</td>
       </tr>
           </table>
       <br>
-      <form action="index.php?page=pago&mode={{mode}}" method="post">
+      <form action="index.php?page=pago&mode={{mode}}" method="POST">
       <div class="row">
         <label class="col-5" for="nomDon">Nombre: </label>
         <input type="text" id="nomDon" name="nomDon" value="{{nomDon}}"
@@ -177,7 +177,7 @@ button{
         <div class="col-7 col-offset-5 center">
           <button class="btn1" type="submit" name="btnProcesar">Pagar</button>
           &nbsp;
-        <a href="index.php?page=productos"><button class="btn2" type="button" name="btnCancelar">Cancelar</button></a>
+        <a href="index.php?page=productos"><button class="btn2" type="submit" name="btnCancelar">Cancelar</button></a>
         </div>
       </div>
       </form>

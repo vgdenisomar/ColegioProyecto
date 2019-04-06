@@ -9,15 +9,19 @@ require_once 'libs/dao.php';
  * @return array
  */
 
-function insertarFactura()
+function insertarFactura($post)
 {
   $insSql = "INSERT INTO `facturas`
-( `fechaFac`)
-VALUES (now());";
+( `fechaFac`,`idDon`,`nomDon`,`direccionDon`,`telDon` )
+VALUES (now(),'%s','%s','%s',%d);";
 
   $result = ejecutarNonQuery(
       sprintf(
-          $insSql
+          $insSql,
+          $post["idDon"],
+          $post["nomDon"],
+          $post["direccionDon"],
+          $post["telDon"]
       )
   );
   if ($result) {
@@ -48,4 +52,22 @@ VALUES (%d,%d, %d, %lf);";
 
   return false;
 }
+
+function actualizarFactura($donacion,$lastID)
+{
+  $updSql = "UPDATE `facturas` set
+`donacionFac` = %lf where codFac = %d;";
+
+  $result = ejecutarNonQuery(
+      sprintf(
+          $updSql,
+          $donacion,
+          $lastID
+      )
+  );
+  return $result;
+}
+
+
+
 ?>

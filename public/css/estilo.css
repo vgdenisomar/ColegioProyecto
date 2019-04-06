@@ -232,6 +232,9 @@ label {
   .col-offset-2 {
     margin-left: 16.6666666667%;
   }
+  .col-offset-2.5 {
+    margin-left: 20%;
+  }
   .col-offset-3 {
     margin-left: 25%;
   }
