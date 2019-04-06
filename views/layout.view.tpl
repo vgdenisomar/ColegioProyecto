@@ -45,7 +45,7 @@
                 {{{page_content}}}
 
             <div class="footer">
-                Derechos Reservados 2018
+                Derechos Reservados 2019
             </div>
             {{foreach js_ref}}
                 <script src="{{uri}}"></script>
