@@ -18,7 +18,7 @@ function insertarFactura($post)
           $insSql,
           $post["idDon"],
           $post["nomDon"],
-          $post["DireccionDon"],
+          $post["direccionDon"],
           $post["telDon"]
       )
   );
