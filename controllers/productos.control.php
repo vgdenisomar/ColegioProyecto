@@ -14,6 +14,15 @@ require_once 'models/productos.model.php';
 function run()
 {
   if(isset($_POST["btnAgregar"])){
+    $viewData["carrito"]=obetenerCarrito();
+    foreach ($viewData["carrito"] as $registro) {
+      if($registro["codProd"]==$_POST["cod"])
+      {
+        redirectWithMessage(
+            "Producto ya agregado",
+            "index.php?page=productos");
+      }
+    }
     $cod=$_POST["cod"];
     $producto = obtenerCodigoProducto($cod);
     $producto["cant"] = $_POST["cant"];
@@ -27,6 +36,7 @@ function run()
 
     $viewData = Array();
     $viewData["carrito"]=obetenerCarrito();
+
     if(count($viewData["carrito"])>0)
     {
         $viewData["count"]=true;
