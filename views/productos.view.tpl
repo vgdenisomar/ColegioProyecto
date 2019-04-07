@@ -205,7 +205,6 @@ button{
 }
 </style>
 
-
 <br><br><br><br>
 <h1>Catologo de Donaciones</h1>
 <section class="row">

@@ -12,7 +12,7 @@ require_once 'libs/dao.php';
 function insertarFactura($post)
 {
   $insSql = "INSERT INTO `facturas`
-( `fechaFac`,`idDon`,`nomDon`,`direccionDon`,`telDon` )
+( `fechaFac`,`idDon`,`nomDon`,`DireccionDon`,`telDon` )
 VALUES (now(),'%s','%s','%s',%d);";
 
   $result = ejecutarNonQuery(
