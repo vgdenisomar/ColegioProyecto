@@ -215,16 +215,16 @@ button{
          <thead>
            <tr>
              <th>Nombre</th>
-             <th>Precio</th>
              <th>Cantidad</th>
+             <th>Precio</th>
            </tr>
          </thead>
         {{foreach carrito}}
          <tbody>
            <tr>
              <td><span>{{nomProd}}</span></td>
-             <td><span class="precio"> {{precioProd}}</span></td>
              <td><span> {{cant}}</span></td>
+             <td><span class="precio"> {{precioProd}}</span></td>
            </tr>
          </tbody>
          {{endfor carrito}}

@@ -11,16 +11,14 @@ require_once 'libs/dao.php';
 
 function insertarFactura($post)
 {
-  $insSql = "INSERT INTO `facturas`
-( `fechaFac`,`idDon`,`nomDon`,`DireccionDon`,`telDon` )
-VALUES (now(),'%s','%s','%s',%d);";
+  $insSql = "INSERT INTO `facturas` (`fechaFac`,`idDon`,`nomDon`,`DireccionDon`,`telDon`) VALUES(now(),'%s','%s','%s',%d);";
 
   $result = ejecutarNonQuery(
       sprintf(
           $insSql,
           $post["idDon"],
           $post["nomDon"],
-          $post["direccionDon"],
+          $post["DireccionDon"],
           $post["telDon"]
       )
   );
@@ -33,9 +31,7 @@ VALUES (now(),'%s','%s','%s',%d);";
 
 function insertarDetalle($carrito,$lastID)
 {
-  $insSql = "INSERT INTO `detalle_facturas`
-( `codFac`,`codProd`,`cantidad`,`precio`)
-VALUES (%d,%d, %d, %lf);";
+  $insSql = "INSERT INTO `detalle_facturas` (`codFac`,`codProd`,`cantidad`,`precio`) VALUES (%d, %d, %d, %lf);";
 
   $result = ejecutarNonQuery(
       sprintf(
@@ -55,8 +51,7 @@ VALUES (%d,%d, %d, %lf);";
 
 function actualizarFactura($donacion,$lastID)
 {
-  $updSql = "UPDATE `facturas` set
-`donacionFac` = %lf where codFac = %d;";
+  $updSql = "UPDATE `facturas` set `donacionFac` = %lf where codFac = %d;";
 
   $result = ejecutarNonQuery(
       sprintf(
