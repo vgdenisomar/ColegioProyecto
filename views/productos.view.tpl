@@ -194,13 +194,23 @@ button{
     border: 3px double black;
   }
 
-.btn1:hover{
+.btn1{
   background-color: #738AFD;
+  color: black;
+}
+
+.btn2{
+  background-color: #ff3838;
+  color: black;
+}
+
+.btn1:hover{
+  background-color: #425FD1;
   color: white;
 }
 
 .btn2:hover{
-  background-color: #C11515;
+  background-color: ##ed0000;
   color: white;
 }
 </style>

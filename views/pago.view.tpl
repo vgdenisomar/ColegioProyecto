@@ -104,14 +104,28 @@ button{
       border: 3px double black;
 }
 
-.btn1:hover{
+.btn1{
   background-color: #738AFD;
+  color: black;
+}
+
+.btn2{
+  background-color: #ff3838;
+  color: black;
+}
+
+.btn1:hover{
+  background-color: #425FD1;
   color: white;
 }
 
 .btn2:hover{
-  background-color: #C11515;
+  background-color: ##ed0000;
   color: white;
+}
+
+form{
+  text-align: center;
 }
 </style>
 
@@ -144,30 +158,31 @@ button{
       </tr>
           </table>
       <br>
+
       <form action="index.php?page=pago&mode={{mode}}" method="POST">
       <div class="row">
         <label class="col-5" for="nomDon">Nombre: </label>
         <input type="text" id="nomDon" name="nomDon" value="{{nomDon}}"
           placeholder="Ingrese su nombre" maxlength="128"
-            class="col-7" {{readonly}}/>
+            class="col-5" {{readonly}}/>
       </div>
       <div class="row">
         <label class="col-5" for="idDon">Identidad: </label>
         <input type="number" id="idDon" name="idDon" value="{{idDon}}"
           placeholder="Ingrese su identidad" maxlength="128"
-            class="col-7" {{readonly}}/>
+            class="col-5" {{readonly}}/>
       </div>
       <div class="row">
         <label class="col-5" for="direccionDon">Direccion: </label>
         <input type="text" id="direccionDon" name="direccionDon" value="{{direccionDon}}"
           placeholder="Ingrese su direccion" maxlength="128"
-            class="col-7" {{readonly}}/>
+            class="col-5" {{readonly}}/>
       </div>
       <div class="row">
         <label class="col-5" for="telDon">Telefono</label>
         <input type="number" id="telDon" name="telDon" value="{{telDon}}"
           placeholder="Ingrese su numero de telefono" maxlength="128"
-            class="col-7" {{readonly}}/>
+            class="col-5" {{readonly}}/>
       </div>
       <br>
       <br>
