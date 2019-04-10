@@ -22,13 +22,25 @@ require_once "libs/dao.php";
  * @return array
  */
 
+
 function obtenerFacPorCodigo($idDon)
 {
     $detallesfacturas = array();
     $sqlstr = sprintf(
-        "SELECT * FROM facturas where idDon like '%s';", $idDon.'%'
+        "SELECT * FROM facturas where  idDon like '%s';", $idDon.'%'
     );
     $detallesfacturas = obtenerRegistros($sqlstr);
     return $detallesfacturas;
 }
+
+function obtenerDetallePorCodigo($codFac)
+{
+    $detallesfacturas = array();
+    $sqlstr = sprintf("SELECT detalle_facturas.codFac, productos.nomProd, detalle_facturas.cantidad, detalle_facturas.precio FROM
+    detalle_facturas INNER JOIN productos on detalle_facturas.codProd=productos.codProd WHERE detalle_facturas.codFac = %d", $codFac);
+    $detallesfacturas = obtenerRegistros($sqlstr);
+    return $detallesfacturas;
+}
+
+
 ?>

@@ -54,7 +54,14 @@ function run()
     }
 
     if(isset($_POST["btnVer"])){
-    $viewData["count"]=true;
+      if(count($viewData["carrito"])==0)
+      {
+        $viewData["count"]=false;
+      }
+      else {
+        $viewData["count"]=true;
+      }
+
     }
     if(isset($_POST["btnCerrar"])){
     $viewData["count"]=false;

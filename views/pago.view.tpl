@@ -37,7 +37,7 @@
       </div>
       <div class="row">
         <label class="col-5" for="idDon">Identidad: </label>
-        <input type="number" id="idDon" name="idDon" value="{{idDon}}"
+        <input type="text" id="idDon" name="idDon" value="{{idDon}}"
           placeholder="Ingrese su identidad" maxlength="128"
             class="col-5" {{readonly}}/>
       </div>
@@ -49,7 +49,7 @@
       </div>
       <div class="row">
         <label class="col-5" for="telDon">Telefono</label>
-        <input type="number" id="telDon" name="telDon" value="{{telDon}}"
+        <input type="text" id="telDon" name="telDon" value="{{telDon}}"
           placeholder="Ingrese su numero de telefono" maxlength="128"
             class="col-5" {{readonly}}/>
       </div>

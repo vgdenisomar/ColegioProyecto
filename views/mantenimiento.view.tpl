@@ -1,5 +1,5 @@
 
-<section class="row backgroundcolor">
+<section class="row backgroundcolor4">
   <h1>{{modeDsc}}</h1>
   <form action="index.php?page=mantenimiento&mode={{mode}}&codProd={{codProd}}"
       method="POST" class="col-8 col-offset-2">
@@ -33,9 +33,9 @@
       </div>
       <div class="row">
         <div class="col-7 col-offset-5 center">
-          <button id="btnProcesar">Confirmar</button>
+          <button class="background" id="btnProcesar">Confirmar</button>
           &nbsp;
-          <button id="btnCancelar">Cancelar</button>
+          <button class="backgroundrojo" id="btnCancelar">Cancelar</button>
         </div>
       </div>
       <script>

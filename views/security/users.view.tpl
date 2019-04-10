@@ -1,5 +1,5 @@
 
-<div class="row depth-1 m-padding backgroundcolor">
+<div class="row depth-1 m-padding backgroundcolor4">
   <h1>
   Gestión de Usuarios
 </h1>
@@ -8,20 +8,20 @@
         <label class="col-md-1" for="fltEmail">Correo:&nbsp;</label>
         <input type="email" name="fltEmail"  class="col-md-8"
               id="fltEmail" placeholder="correo@electron.ico" value="{{fltEmail}}" />
-        <button class="col-md-3" id="btnFiltro"><span class="ion-refresh">&nbsp;Actualizar</span></button>
+        <button class="col-md-3 background" id="btnFiltro"><span class="ion-refresh">&nbsp;Actualizar</span></button>
       </div>
   </form>
 </div>
 
 <div class="row depth-1">
   <table class="col-md-12">
-    <thead>
+    <thead style="background-color:black;">
       <tr>
-        <th>Correo</th>
-        <th>Nombre</th>
-        <th class="sd-hide">Tipo</th>
-        <th class="sd-hide">Estado</th>
-        <th><a href="index.php?page=user&usrcod=0&mode=INS" class="btn depth-1 s-margin">
+        <th style="color:white;">Correo</th>
+        <th style="color:white;">Nombre</th>
+        <th style="color:white;" class="sd-hide">Tipo</th>
+        <th style="color:white;" class="sd-hide">Estado</th>
+        <th><a style="color:gray;" href="index.php?page=user&usrcod=0&mode=INS" class="btn depth-1 s-margin">
           <span class="ion-plus-circled"></span>
           </a></th>
       </tr>

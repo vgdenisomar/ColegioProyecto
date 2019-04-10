@@ -26,6 +26,7 @@ function run()
 
     $viewData["nombre"] = "Productos ABC";
     if(isset($_POST["btnProcesar"])){
+      $viewData["haserrores"] = false;
       $viewData["nomDon"]=$_POST["nomDon"];
       $viewData["idDon"]=$_POST["idDon"];
       $viewData["direccionDon"]=$_POST["direccionDon"];
@@ -48,7 +49,14 @@ function run()
           $viewData["haserrores"] = true;
           $viewData["errores"][] = "Telefono no se puede dejar vacio";
       }
-
+      if (!isValidNum($_POST["idDon"])) {
+          $viewData["haserrores"] = true;
+          $viewData["errores"][] = "Identidad solo puede ser numeros";
+      }
+      if (!isValidNum($_POST["telDon"])) {
+          $viewData["haserrores"] = true;
+          $viewData["errores"][] = "Identidad solo puede ser numeros";
+      }
       if (!$viewData["haserrores"]) {
           /// llamamos al modelo de datos para insertar el producto
           $carrito= array();
@@ -65,7 +73,6 @@ function run()
           $carrito=array();
           redirectWithMessage("Su Donacion a sido exitosa", "index.php?page=productos");
       }
-
       }
       if(isset($_POST["btnCancelar"])){
       CancelarCarrito();

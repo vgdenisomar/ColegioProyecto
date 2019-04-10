@@ -1,9 +1,8 @@
 
-<div class="row depth-1 m-padding backgroundcolor">
-  <h1>Gestión de Función</h1>
-  <h2>{{modeDesc}}</h2>
+<div class="row depth-1 m-padding backgroundcolor4">
+  <h1>{{modeDesc}}</h1>
 </div>
-<div class="row depth-1 m-padding backgroundcolor2">
+<div class="row depth-1 m-padding backgroundcolor3">
   {{if haserrores}}
     <ul class="alert alert-danger depth-1 m-padding" style="list-style:none;">
       {{foreach errores}}
@@ -49,9 +48,9 @@
     <div class="row s-padding">
       <div class="col-md-12 right">
         {{ifnot readonly}}
-        <button id="btnConfirm"><span class=""></span>Confirmar</button>
+        <button class="background" id="btnConfirm"><span class=""></span>Confirmar</button>
         {{endifnot readonly}}
-        <button id="btnCancel">Cancelar</button>
+        <button class="backgroundrojo" id="btnCancel">Cancelar</button>
       </div>
     </div>
     </div>

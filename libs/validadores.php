@@ -20,7 +20,14 @@
   {
       return preg_match("/^\+?\(?504\)?\s?[1-9][0-9]{3}\-?[0-9]{4}$/", $value);
   }
-  
+
+  function isValidNum($value)
+  {
+      return preg_match( '/^([0-9])*$/' , $value);
+  }
+
+
+
   function isValidSKU($value)
   {
     return preg_match("/^((?=VID)|(?=PLT)|(?=ACC))[VIDPLTAC]{3}[0-9]{4}$/", $value);
