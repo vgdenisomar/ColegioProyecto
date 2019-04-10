@@ -7,7 +7,7 @@
       <input type="hidden" name="tocken" value="{{tocken}}" />
       <input type="hidden" name="mode" value="{{mode}}" />
       <div class="row">
-        <label class="col-5" for="nomProd">Nombre Tarjeta</label>
+        <label class="col-4 left" for="nomProd">Nombre Tarjeta</label>
         <input type="text" id="nomProd" name="nomProd" value="{{nomProd}}"
           placeholder="Nombre de la tarjeta" maxlength="128"
             class="col-7" {{readonly}}/>
@@ -15,24 +15,24 @@
 
 
       <div class="row">
-        <label class="col-5" method="POST" enctype="multipart/form-data">
+        <label class="col-4 left" method="POST" enctype="multipart/form-data">
         <label  for="imagen">Imagen </label>
         <input type="file" name="imagen" id="imagen" value="{{imagen}}" {{readonly}}/>
         <img src='http://localhost/webnegocios/ColegioProyecto/image". basename(imagen) ."' />
       </div>
 
       <div class="row">
-      <label class="col-5" for="precioProd">Precio</label>
+      <label class="col-4 left" for="precioProd">Precio</label>
       <input type="number" min="0" max="99999999" id="precioProd"
         name="precioProd" value="{{precioProd}}"
         placeholder="Precio de Venta" class="col-7" {{readonly}} />
       </div>
       <div class="row">
-        <label class="col-12" for="descProd">Descripción</label>
-        <textarea id="descProd" name="descProd" class="col-12" {{readonly}}>{{descProd}}</textarea>
+        <label class="col-4 left" for="descProd">Descripción</label>
+        <textarea id="descProd" name="descProd" class="col-7 " {{readonly}}>{{descProd}}</textarea>
       </div>
       <div class="row">
-        <div class="col-7 col-offset-5 center">
+        <div class="col-8 col-offset-5 center">
           <button class="background" id="btnProcesar">Confirmar</button>
           &nbsp;
           <button class="backgroundrojo" id="btnCancelar">Cancelar</button>

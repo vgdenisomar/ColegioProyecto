@@ -33,7 +33,10 @@
             <div class="contenido">
                 {{{page_content}}}
             </div>
-            
+            <div class="footer">
+                Derechos Reservados 2019
+            </div>
+
             {{foreach js_ref}}
                 <script src="{{uri}}"></script>
             {{endfor js_ref}}
