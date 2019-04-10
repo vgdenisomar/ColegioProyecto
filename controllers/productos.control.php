@@ -48,7 +48,11 @@ function run()
 
     $viewData = Array();
     $viewData["carrito"]=obetenerCarrito();
-    $viewData["cnt"] =count($viewData["carrito"]);
+    $viewData["cnt"]=0;
+    foreach ($viewData["carrito"] as $registro) {
+      $viewData["cnt"]+=$registro["cant"];
+    }
+
     if(isset($_POST["btnVer"])){
     $viewData["count"]=true;
     }
