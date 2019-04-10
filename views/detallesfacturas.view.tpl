@@ -26,7 +26,7 @@
     <tbody class="zebra">
       {{foreach detallesfacturas}}
       <tr>
-        <td>{{codFac}}</td>
+        <td><a href="index.php?page=detallefactura&codFac={{codFac}}">{{codFac}}</a></td>
         <td>{{fechaFac}}</td>
         <td>{{donacionFac}}</td>
         <td>{{idDon}}</td>
