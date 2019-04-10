@@ -21,28 +21,9 @@
       <div class="carddashboard4 col-l-55 center">
         <li><a style="color:white;" href="index.php?page=mantenimientos"><h1 class="h1hover">Tarjetas</h1></a></li>
       </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
 
       <div class="carddashboard5 col-l-55 center">
         <li><a style="color:white;" href="index.php?page=detallesfacturas"><h1 class="h1hover">Facturas</h1></a></li>
       </div>
-
-=======
-
-      <div class="carddashboard1 col-l-55 center">
-        <li><a style="color:white;" href="index.php?page=detallesfacturas"><h1 class="h1hover">Facturas</h1></a></li>
-      </div>
-
-
->>>>>>> e1ffdc6acb710ded7a460bb7da2f308e8c815ea4
-=======
-
-      <div class="carddashboard1 col-l-55 center">
-        <li><a style="color:white;" href="index.php?page=detallesfacturas"><h1 class="h1hover">Facturas</h1></a></li>
-      </div>
-
-
->>>>>>> 0e53ca770404966d08b8619b031165f39fc6e7f9
     </ul>
   </div>

@@ -1,14 +1,15 @@
-<h1>
-  Detalle de Factura
-</h1>
-<div class="row depth-1">
+
+<div class="row depth-1 backgroundcolor4">
+  <h1>
+    Detalle de Factura
+  </h1>
   <table class="col-md-12">
-    <thead>
+    <thead style="background-color:black">
       <tr>
-        <th>Código Factura</th>
-        <th>Tarjeta</th>
-        <th>Cantidad</th>
-        <th>Precio</th>
+        <th style="color:white;">Código Factura</th>
+        <th style="color:white;">Tarjeta</th>
+        <th style="color:white;">Cantidad</th>
+        <th style="color:white;">Precio</th>
       </tr>
     </thead>
     <tbody class="zebra">
