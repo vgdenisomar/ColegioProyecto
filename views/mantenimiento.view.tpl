@@ -17,7 +17,7 @@
       <div class="row">
         <label class="col-5" method="POST" enctype="multipart/form-data">
         <label  for="imagen">Imagen </label>
-        <input type="file" name="imagen" id="imagen" value="{{imagen}}"/>
+        <input type="file" name="imagen" id="imagen" value="{{imagen}}" {{readonly}}/>
         <img src='http://localhost/webnegocios/ColegioProyecto/image". basename(imagen) ."' />
       </div>
 

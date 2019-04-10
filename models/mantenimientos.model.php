@@ -24,7 +24,7 @@ function obtenerMantenimientos()
  */
 function agregarNuevoMantenimiento($data)
 {
-    $insSql = "INSERT INTO `productos` (`nomProd`, `descProd`, `precioProd`, `imagen`) VALUES ('%s','%s',%d'%s');";
+    $insSql = "INSERT INTO `productos` (`nomProd`, `descProd`, `precioProd`, `imagen`) VALUES ('%s','%s',%d,'%s');";
 
     $result = ejecutarNonQuery(
         sprintf(
