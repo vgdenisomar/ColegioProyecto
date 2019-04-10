@@ -9,7 +9,7 @@ function run()
 {
     $viewData = Array();
     $viewData["Mantenimientos"] =  obtenerMantenimientos();
-    $viewData["nombre"] = "Mantenimiento de Productos";
+    $viewData["nombre"] = "Mantenimiento de Tarjetas";
     renderizar("mantenimientos", $viewData);
 }
   run();
