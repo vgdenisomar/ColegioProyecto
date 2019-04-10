@@ -7,9 +7,9 @@
       <input type="hidden" name="tocken" value="{{tocken}}" />
       <input type="hidden" name="mode" value="{{mode}}" />
       <div class="row">
-        <label class="col-5" for="nomProd">Nombre Producto</label>
+        <label class="col-5" for="nomProd">Nombre Tarjeta</label>
         <input type="text" id="nomProd" name="nomProd" value="{{nomProd}}"
-          placeholder="Nombre del Producto" maxlength="128"
+          placeholder="Nombre de la tarjeta" maxlength="128"
             class="col-7" {{readonly}}/>
       </div>
 
