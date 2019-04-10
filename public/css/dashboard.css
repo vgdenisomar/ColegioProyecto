@@ -1,3 +1,10 @@
+li a h1{
+  font-size: 30px;
+  text-decoration: none;
+  color: black;
+  background-color: #fff5;
+}
+
 .carddashboard1{
   display:flex;
   flex-direction:column;
@@ -8,7 +15,7 @@
   box-shadow: 1px 1px 3px 3px #000;
   padding: 1em;
   margin: 1em;
-  background-image: url('../../PaginaWeb/img/card1.jpg');
+  background-image: url('../../PaginaWeb/img/card3.jpg');
   color: black;
 }
 
@@ -36,7 +43,7 @@
   box-shadow: 1px 1px 3px 3px #000;
   padding: 1em;
   margin: 1em;
-  background-image: url('../img/card1.jpg');
+  background-image: url('../../PaginaWeb/img/card1.jpg');
   color: black;
 }
 
@@ -50,6 +57,6 @@
   box-shadow: 1px 1px 3px 3px #000;
   padding: 1em;
   margin: 1em;
-  background-image: url('../img/card1.jpg');
+  background-image: url('../../PaginaWeb/img/card4.jpg');
   color: black;
 }
