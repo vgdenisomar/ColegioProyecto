@@ -5,6 +5,16 @@ li a h1{
   background-color: #fff5;
 }
 
+a{
+  text-decoration: none;
+  list-style: none;
+}
+
+.h1hover:hover{
+  background-color: #0007;
+  color: white;
+}
+
 .carddashboard1{
   display:flex;
   flex-direction:column;
@@ -59,4 +69,24 @@ li a h1{
   margin: 1em;
   background-image: url('../../PaginaWeb/img/card4.jpg');
   color: black;
+}
+
+div .h12{
+  background-color: #fff;
+}
+
+.h12{
+  justify-content: center !important;
+  text-align: center !important;
+  color: black !important;
+  font-size: 22px;
+  text-shadow: 1px 1px 2px white;
+}
+
+.backgroundcolor{
+  background-color: #fbffad;
+}
+
+.backgroundcolor2{
+  background-color: #1233;
 }

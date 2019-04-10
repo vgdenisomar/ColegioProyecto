@@ -1,7 +1,8 @@
-<h1>
-  Gestión de Funciones
-</h1>
-<div class="row depth-1 m-padding">
+
+<div class="row depth-1 m-padding backgroundcolor">
+  <h1>
+    Gestión de Funciones
+  </h1>
   <form action="index.php?page=programas" method="post" class="col-md-8 col-offset-2">
       <div class="row s-padding">
         <label class="col-md-1" for="fltNombre">Buscar:&nbsp;</label>

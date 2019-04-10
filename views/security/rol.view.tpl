@@ -1,8 +1,9 @@
-<h1>Gestión de Rol</h1>
-<div class="row depth-1 m-padding">
+
+<div class="row depth-1 m-padding backgroundcolor">
+  <h1>Gestión de Rol</h1>
   <h2>{{modeDesc}}</h2>
 </div>
-<div class="row depth-1 m-padding">
+<div class="row depth-1 m-padding backgroundcolor2">
   {{if haserrores}}
     <ul class="alert alert-danger depth-1 m-padding" style="list-style:none;">
       {{foreach errores}}
@@ -46,10 +47,10 @@
   </form>
 </div>
 {{ifnot isinsert}}
-<div class="row depth-1 m-padding">
+<div class="row depth-1 m-padding backgroundcolor">
   <h2>Programas Por Rol</h2>
 </div>
-<div class="row depth-1 m-padding">
+<div class="row depth-1 m-padding backgroundcolor2">
   <table class="col-sm-8 col-sm-offset-2 col-md-6 col-offset-3">
     <thead>
 

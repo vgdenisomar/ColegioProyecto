@@ -1,6 +1,6 @@
 <style>
   .footer{
-    background-color: #496576 !important;
+    
   }
 
   .log{
@@ -44,7 +44,7 @@
         <input class="col-md-7" type="password" name="txtPswd" id="txtPswd" value=""  />
       </div>
       <br>
-      <br> 
+      <br>
       <div class="row">
         <button class="col-offset-5 col-md-7 btnlog" id="btnSend"><span class="ion-log-in"></span>&nbsp;Iniciar Sesión</button>
       </div>

@@ -33,7 +33,7 @@
             <div class="contenido">
                 {{{page_content}}}
             </div>
-
+            
             {{foreach js_ref}}
                 <script src="{{uri}}"></script>
             {{endfor js_ref}}

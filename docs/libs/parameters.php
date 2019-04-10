@@ -12,20 +12,18 @@
  *
  * @link http://url.com
  */
-$server = "127.0.0.1";
-$user = "root";
-$pswd = "12123";
-$database = "Colegio";
-$port = "3306";
+ $server = "127.0.0.1";
+ $user = "root";
+ $pswd = "123";
+ $database = "Colegio";
+ $port = "3306";
 
-$emailHost = 'email-smtp.us-west-2.amazonaws.com';
-$smtpUser = 'amazonwebuserkey';
-$smtpSecret = 'smtpscreteer';
-$smtpPort = "587";
+ $emailHost = 'email-smtp.us-west-2.amazonaws.com';
+ $smtpUser = 'amazonwebuserkey';
+ $smtpSecret = 'smtpscreteer';
+ $smtpPort = "587";
 
-$host_server = 'http://localhost/mvc/';
-if (isset($_SERVER["SERVER_MVC"])) {
-    $host_server = $_SERVER["SERVER_MVC"];
-}
-
-?>
+ $host_server = 'http://localhost/mvc/';
+ if (isset($_SERVER["SERVER_MVC"])) {
+     $host_server = $_SERVER["SERVER_MVC"];
+ }

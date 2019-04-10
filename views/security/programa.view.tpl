@@ -1,8 +1,9 @@
-<h1>Gestión de Función</h1>
-<div class="row depth-1 m-padding">
+
+<div class="row depth-1 m-padding backgroundcolor">
+  <h1>Gestión de Función</h1>
   <h2>{{modeDesc}}</h2>
 </div>
-<div class="row depth-1 m-padding">
+<div class="row depth-1 m-padding backgroundcolor2">
   {{if haserrores}}
     <ul class="alert alert-danger depth-1 m-padding" style="list-style:none;">
       {{foreach errores}}
