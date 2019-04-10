@@ -14,19 +14,19 @@ a{
   <div class="contenedorcards col-l-12">
     <ul>
       {{if rol_prd}}
-      <div class="carddashboard1 col-l-5.5 center">
+      <div class="carddashboard1 col-l-55 center">
       <li><a href="index.php?page=users">Usuarios</a></li>
       </div>
       {{endif rol_prd}}
-      <div class="carddashboard2 col-l-5.5 center">
+      <div class="carddashboard2 col-l-55 center">
         <li><a href="index.php?page=roles">Roles</a></li>
       </div>
 
-      <div class="carddashboard3 col-l-4 center">
+      <div class="carddashboard3 col-l-55 center">
         <li><a href="index.php?page=programas">Funciones</a></li>
       </div>
 
-      <div class="carddashboard4 col-l-4 center">
+      <div class="carddashboard4 col-l-55 center">
         <li><a href="index.php?page=mantenimientos">Mantenimientos</a></li>
       </div>
 
