@@ -7,6 +7,8 @@
             <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
             <link rel="stylesheet" href="public/css/papier.css" />
             <link rel="stylesheet" href="public/css/estilo.css" />
+            <link rel="stylesheet" href="public/css/dashboard.css" />
+            <link rel="stylesheet" href="PaginaWeb/css/grid.css" />
             <script src="public/js/jquery.min.js"></script>
             {{foreach css_ref}}
                 <link rel="stylesheet" href="{{uri}}" />
@@ -32,9 +34,6 @@
                 {{{page_content}}}
             </div>
 
-            <div class="footer">
-                Derechos Reservados 2019
-            </div>
             {{foreach js_ref}}
                 <script src="{{uri}}"></script>
             {{endfor js_ref}}

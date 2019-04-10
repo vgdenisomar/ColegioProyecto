@@ -1,7 +1,6 @@
 
-<br><br><br><br>
-<h1>Facturación</h1>
-<div class="">
+<div class="prlx5 pr">
+<h1 class="h11">Facturación</h1>
   <table>
           <thead>
             <tr>
@@ -82,7 +81,7 @@
         });
       </script>
       {{if haserrores}}
-      <section class="">
+      <section>
           {{foreach errores}}
               <div>{{this}}</div>
           {{endfor errores}}

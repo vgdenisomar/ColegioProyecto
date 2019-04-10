@@ -88,6 +88,18 @@
   text-align: justify;
 }
 
+.prlx5{
+  margin: 0px 0px !important;
+  background-image: url('../img/pago.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 180vh;
+  width: 100%;
+  text-align: justify;
+}
+
 .h11{
   display: flex !important;
   justify-content: center !important;

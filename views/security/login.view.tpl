@@ -31,7 +31,8 @@
 <div class="prlx3">
   <section class="row" >
     <form id="formLogin" action="index.php?page=login" method="POST" class="col-md-8 col-offset-2 cardlog">
-      <h1>Inicio de Sesión</h1>
+      <h1 class="h11">Inicio de Sesión</h1>
+      <br>
       <input name="returnto" value="{{returnto}}" type="hidden" />
       <input name="tocken" value="{{tocken}}" type="hidden"/>
       <div class="row">
@@ -41,7 +42,9 @@
       <div class="row">
         <label class="col-md-5" for="txtPswd">Contraseña:</label>
         <input class="col-md-7" type="password" name="txtPswd" id="txtPswd" value=""  />
-      </div><br/>
+      </div>
+      <br>
+      <br> 
       <div class="row">
         <button class="col-offset-5 col-md-7 btnlog" id="btnSend"><span class="ion-log-in"></span>&nbsp;Iniciar Sesión</button>
       </div>
