@@ -64,8 +64,8 @@
 }
 
 .h11{
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  color: #fff;
+  display: flex !important;
+  justify-content: center !important;
+  text-align: center !important;
+  color: #fff !important;
 }

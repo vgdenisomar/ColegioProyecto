@@ -1,0 +1,19 @@
+
+  h1{
+    color: black;
+    text-shadow: 1px 2px 2px lightgray;
+  }
+
+  label{
+    font-size: 20px;
+    text-shadow: 1px 2px 2px lightgray;
+  }
+
+  .btnlog .row button{
+    background-color: #738AFD;
+    color: white;
+  }
+
+  .row button:hover{
+    background-color: #425FD1;
+  }
