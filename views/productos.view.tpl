@@ -1,5 +1,5 @@
-<div class="prlx2">
-  <h1>Catologo de Donaciones</h1>
+<div class="prlx4">
+  <h1 class="h11">Catálogo de Donaciones</h1>
   <section class="row">
        {{if count}}
        <div class="carritoHolder">
@@ -39,10 +39,10 @@
           <form action="index.php?page=productos&mode={{mode}}" method="POST">
             <input type="hidden" name="cod" id="cod" value="{{codProd}}"/>
             <h2 style="color:#738AFD">{{nomProd}}</h2>
-            <h3 style="color:#000">{{descProd}}</h3>
-            <span class="price">L. {{precioProd}}</span>
-            <label class="col-5"for="cant">Cantidad:</label>
-            <input type="number" style="width:4em;height:1em;" min="1" max="99999999" step="1" id="cant"
+            <h3 style="color:#fff">{{descProd}}</h3>
+            <span style="font-size:20px;"class="price">L. {{precioProd}}</span>
+            <label style="color:#fff" class="col-5"for="cant">Cantidad:</label>
+            <input type="number" style="width:4em;height:2em; margin-left:5.5%;" min="1" max="99999999" step="1" id="cant"
               name="cant" value="1"
               placeholder="Unidades en Inventario" maxlength="8"
               class="col-7" {{readonly}}/>

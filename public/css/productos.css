@@ -5,8 +5,7 @@
 
   body{
     padding: 0px;
-    margin: 0px;
-    background-color: #1233;
+    margin-top: -4%;
   }
 
   .productHolder{
@@ -19,22 +18,21 @@
   .card{
     width: 320px;
     min-height: 280px;
-    box-shadow: 1px 1px 3px 3px #000;
     padding: 1em;
     margin: 1em;
-    background-color: #0000;
+    background-color: #0009;
     color: black;
   }
 
   div h2{
     text-align: center;
     text-shadow: 1px 1px 1px black;
-    text-decoration: underline;
   }
 
   div h3 span{
     text-align: center;
   }
+
   .card form{
     display: flex;
     min-height: 180px;
@@ -57,7 +55,7 @@
     border-radius: 15px;
     border: 3px double black;
     background-color: #738AFD;
-    color: white;
+    color: black;
   }
 
   .card button:hover{
@@ -66,6 +64,7 @@
 
   .card span{
     text-align: right;
+    color: white;
   }
 
   label, input{
@@ -90,7 +89,7 @@
     }
 
     table tr:nth-child(2n-1) td {
-      background: #EAECB1;
+      background: #fff7;
     }
 
     table th, table td {
@@ -124,7 +123,6 @@
         border-collapse:collapse;
         border-spacing: 0;
         margin-bottom: 20px;
-        background-color: #E8E8E8;
         text-align: center;
         margin: 0 auto;
     }
@@ -139,6 +137,7 @@
         display: table-row-group;
         vertical-align: middle;
         border-color: inherit;
+        color: black;
     }
 
     tr th{
@@ -204,8 +203,4 @@ button{
 .btn2:hover{
   background-color: ##ed0000;
   color: white;
-}
-
-div .color{
-
 }

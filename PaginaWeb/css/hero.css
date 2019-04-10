@@ -58,7 +58,7 @@
   background-position: center center;
   background-attachment: fixed;
   text-shadow: 1px 1px 1px #fff;
-  height: 200vh;
+  height: 95vh;
   width: 100%;
   text-align: justify;
 }
@@ -72,6 +72,18 @@
   background-attachment: fixed;
   text-shadow: 1px 1px 1px #fff;
   height: 95vh;
+  width: 100%;
+  text-align: justify;
+}
+
+.prlx4{
+  margin: 0px 0px !important;
+  background-image: url('../img/carrito1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 2000vh;
   width: 100%;
   text-align: justify;
 }
