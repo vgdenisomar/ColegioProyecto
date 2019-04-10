@@ -1,5 +1,6 @@
-<h1>Gestión de Usuario</h1>
-<div class="row depth-1 m-padding">
+
+<div class="row depth-1 m-padding backgroundcolor">
+  <h1>Gestión de Usuario</h1>
   <h2>{{modeDesc}}</h2>
 </div>
 <div class="row depth-1 m-padding">

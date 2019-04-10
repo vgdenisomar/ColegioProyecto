@@ -71,19 +71,22 @@ a{
   color: black;
 }
 
+div .h12{
+  background-color: #fff;
+}
+
 .h12{
   justify-content: center !important;
   text-align: center !important;
-  color: #fff !important;
+  color: black !important;
   font-size: 22px;
-  text-shadow: 1px 1px 2px black;
+  text-shadow: 1px 1px 2px white;
 }
 
-section .dash{
-  background-color: #1239;
-  margin: 0 auto;
+.backgroundcolor{
+  background-color: #fbffad;
 }
 
-section div{
-  background-color: #1234;
+.backgroundcolor2{
+  background-color: #1233;
 }

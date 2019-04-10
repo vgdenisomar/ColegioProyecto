@@ -1,8 +1,8 @@
 
+<div class="row depth-1 m-padding backgroundcolor">
 <h1>
   Gestión de Roles
 </h1>
-<div class="row depth-1 m-padding">
   <form action="index.php?page=roles" method="post" class="col-md-8 col-offset-2">
       <div class="row s-padding">
         <label class="col-md-1" for="fltDsc">Roles:&nbsp;</label>

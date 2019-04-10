@@ -14,7 +14,7 @@
  */
 $server = "127.0.0.1";
 $user = "root";
-$pswd = "123";
+$pswd = "";
 $database = "Colegio";
 $port = "3306";
 

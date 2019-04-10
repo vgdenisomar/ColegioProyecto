@@ -1,7 +1,7 @@
 
-<h1>{{modeDsc}}</h1>
-<section class="row">
-  <form action="index.php?page=mantenimiento&mode={{mode}}&codProd={{codProd}}" 
+<section class="row backgroundcolor">
+  <h1>{{modeDsc}}</h1>
+  <form action="index.php?page=mantenimiento&mode={{mode}}&codProd={{codProd}}"
       method="POST" class="col-8 col-offset-2">
       <input type="hidden" name="codProd" value="{{codProd}}" />
       <input type="hidden" name="tocken" value="{{tocken}}" />
@@ -13,7 +13,7 @@
             class="col-7" {{readonly}}/>
       </div>
 
-    
+
       <div class="row">
         <label class="col-5" method="POST" enctype="multipart/form-data">
         <label  for="imagen">Imagen </label>
@@ -23,7 +23,7 @@
 
       <div class="row">
       <label class="col-5" for="precioProd">Precio</label>
-      <input type="number" min="0" max="99999999" id="precioProd" 
+      <input type="number" min="0" max="99999999" id="precioProd"
         name="precioProd" value="{{precioProd}}"
         placeholder="Precio de Venta" class="col-7" {{readonly}} />
       </div>
@@ -53,10 +53,10 @@
         });
       </script>
     <!--
-    codProd int(11) AI PK 
-    nomProd varchar(128) 
-    descProd varchar(128) 
-    precioProd double 
+    codProd int(11) AI PK
+    nomProd varchar(128)
+    descProd varchar(128)
+    precioProd double
     -->
     </form>
     {{if haserrores}}

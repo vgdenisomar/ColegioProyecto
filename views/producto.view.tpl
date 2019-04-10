@@ -1,6 +1,6 @@
 <h1>{{modeDsc}}</h1>
 <section class="row">
-  <form action="index.php?page=producto&mode={{mode}}&prdcod={{prdcod}}" 
+  <form action="index.php?page=producto&mode={{mode}}&prdcod={{prdcod}}"
       method="POST" class="col-8 col-offset-2">
       <input type="hidden" name="prdcod" value="{{prdcod}}" />
       <input type="hidden" name="tocken" value="{{tocken}}" />
@@ -13,26 +13,26 @@
       </div>
       <div class="row">
         <label class="col-5" for="prdcodbrr">Código de Barras</label>
-        <input type="text" id="prdcodbrr" name="prdcodbrr" value="{{prdcodbrr}}" 
+        <input type="text" id="prdcodbrr" name="prdcodbrr" value="{{prdcodbrr}}"
           placeholder="Código de Barras" maxlength="45"
           class="col-7" {{readonly}}/>
       </div>
       <div class="row">
         <label class="col-5" for="prdSKU">Código del Producto</label>
-        <input type="text" id="prdSKU" name="prdSKU" value="{{prdSKU}}" 
+        <input type="text" id="prdSKU" name="prdSKU" value="{{prdSKU}}"
           placeholder="Código del Producto" maxlength="45"
           class="col-7" {{readonly}}/>
       </div>
       <div class="row">
         <label class="col-5" for="prdStock">Unidades en Inventario</label>
-        <input type="number" min="0" max="99999999" step="1" id="prdStock" 
-          name="prdStock" value="{{prdStock}}" 
+        <input type="number" min="0" max="99999999" step="1" id="prdStock"
+          name="prdStock" value="{{prdStock}}"
           placeholder="Unidades en Inventario" maxlength="8"
           class="col-7" {{readonly}}/>
       </div>
       <div class="row">
       <label class="col-5" for="prdPrcVVnt">Precio de Venta</label>
-      <input type="number" min="0" max="99999999" id="prdPrcVVnt" 
+      <input type="number" min="0" max="99999999" id="prdPrcVVnt"
         name="prdPrcVVnt" value="{{prdPrcVVnt}}"
         placeholder="Precio de Venta" class="col-7" {{readonly}} />
       </div>
@@ -44,7 +44,7 @@
       </div>
       <div class="row">
         <label class="col-5" for="prdImgUri">Url de Imágen</label>
-        <input type="text" id="prdImgUri" name="prdImgUri" value="{{prdImgUri}}" 
+        <input type="text" id="prdImgUri" name="prdImgUri" value="{{prdImgUri}}"
           placeholder="Url de Imagen del Producto" maxlength="255"
           class="col-7" {{readonly}} />
       </div>

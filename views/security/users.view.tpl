@@ -1,7 +1,8 @@
+
+<div class="row depth-1 m-padding backgroundcolor">
   <h1>
   Gestión de Usuarios
 </h1>
-<div class="row depth-1 m-padding">
   <form action="index.php?page=users" method="post" class="col-md-8 col-offset-2">
       <div class="row s-padding">
         <label class="col-md-1" for="fltEmail">Correo:&nbsp;</label>

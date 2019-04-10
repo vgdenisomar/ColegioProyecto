@@ -1,6 +1,6 @@
 
-<section class="dash">
-  <div class="contenedorcards col-l-12">
+
+  <div class="contenedorcards col-l-12 backgroundcolor">
     <div class="h12">
      <h1>Seguridad</h1>
     </div>
@@ -21,8 +21,5 @@
       <div class="carddashboard4 col-l-55 center">
         <li><a style="color:white;" href="index.php?page=mantenimientos"><h1 class="h1hover">Mantenimientos</h1</a></li>
       </div>
-
-
     </ul>
   </div>
-</section>

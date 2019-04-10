@@ -1,15 +1,16 @@
-<h1>Gestión de Mantenimientos</h1>
-<h2>{{nombre}}</h2>
-<section class="row">
-<table class="col-10 col-offset-1">
-  <thead>
+
+<section class="row backgroundcolor">
+  <h1>Gestión de Mantenimientos</h1>
+  <h2>{{nombre}}</h2>
+<table style="background-color:white;"class="col-10 col-offset-1">
+  <thead style="background-color:black">
     <tr>
-      <th>Código</th>
-      <th>Nombre</th>
-      <th>Descripción</th>
-      <th>Precio</th>
+      <th style="color:white">Código</th>
+      <th style="color:white">Nombre</th>
+      <th style="color:white">Descripción</th>
+      <th style="color:white">Precio</th>
       <th>
-        <a href="index.php?page=mantenimiento&mode=INS&codProd=" class="btn">
+        <a style="color:white;" href="index.php?page=mantenimiento&mode=INS&codProd=" class="btn">
           +
         </a>
       </th>
