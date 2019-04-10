@@ -21,12 +21,11 @@
       <div class="carddashboard4 col-l-55 center">
         <li><a style="color:white;" href="index.php?page=mantenimientos"><h1 class="h1hover">Mantenimientos</h1></a></li>
       </div>
-<<<<<<< HEAD
+      
       <div class="carddashboard1 col-l-55 center">
         <li><a style="color:white;" href="index.php?page=detallesfacturas"><h1 class="h1hover">Facturas</h1></a></li>
       </div>
 
-=======
->>>>>>> fbc563684213327a2abeb6afc176ffdaac57ac91
+
     </ul>
   </div>
