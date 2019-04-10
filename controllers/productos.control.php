@@ -44,17 +44,16 @@ function run()
     if(isset($_POST["btnCancelar"])){
     CancelarCarrito();
     $carrito=array();
-}
+    }
 
     $viewData = Array();
     $viewData["carrito"]=obetenerCarrito();
-
-    if(count($viewData["carrito"])>0)
-    {
-        $viewData["count"]=true;
+    $viewData["cnt"] =count($viewData["carrito"]);
+    if(isset($_POST["btnVer"])){
+    $viewData["count"]=true;
     }
-    else{
-      $viewData["count"]=false;
+    if(isset($_POST["btnCerrar"])){
+    $viewData["count"]=false;
     }
     $viewData["productos"] =  obtenerProductos();
     $viewData["nombre"] = "Productos a Donar";

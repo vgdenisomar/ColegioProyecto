@@ -1,6 +1,12 @@
 <div class="prlx4 pr">
   <h1 class="h11">Catálogo de Donaciones</h1>
   <section class="row">
+      <form action="index.php?page=productos&mode={{mode}}" method="POST">
+      <label style="margin-left:55em;color:white;font-size:20px;"for="">Carrito: </label>
+      <label style="color:white;font-size:20px;" for="">{{cnt}}</label>
+      <button style="margin-left:0.5em;"class="btn1" type="submit" name="btnVer">Ver</button>
+      <button style="margin-left:0.5em;"class="btn2" type="submit" name="btnCerrar">Cerrar</button>
+    </form>
        {{if count}}
        <div class="carritoHolder">
        <div class="carritoItem">
@@ -60,6 +66,18 @@
             location.assign("index.php?page=productos");
         });
         $("#btnAgregar").click(function(e){
+            e.preventDefault();
+            e.stopPropagation();
+            /*Se realize las validaciones adecuadas*/
+            document.forms[0].submit();
+        });
+        $("#btnVer").click(function(e){
+            e.preventDefault();
+            e.stopPropagation();
+            /*Se realize las validaciones adecuadas*/
+            document.forms[0].submit();
+        });
+        $("#btnCerrar").click(function(e){
             e.preventDefault();
             e.stopPropagation();
             /*Se realize las validaciones adecuadas*/
