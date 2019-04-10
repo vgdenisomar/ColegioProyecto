@@ -15,6 +15,7 @@ function obtenerMantenimientos()
     return $mantenimientos;
 }
 
+
 /**
  * Agrega Nuevo Mantenimiento a la tabla de mantenimientos
  *
@@ -22,9 +23,12 @@ function obtenerMantenimientos()
  *
  * @return integer Devuelve el id del Mantenimiento generado.
  */
+
+
 function agregarNuevoMantenimiento($data)
 {
     $insSql = "INSERT INTO `productos` (`nomProd`, `descProd`, `precioProd`, `imagen`) VALUES ('%s','%s',%d,'%s');";
+    
 
     $result = ejecutarNonQuery(
         sprintf(
@@ -65,7 +69,7 @@ function obtieneMantenimientoPorId($codProd)
  */
 function actualizarMantenimiento($data)
 {
-    $updSql = "UPDATE `productos` set `nomProd` = '%s', `descProd` = '%s', `precioProd` = %d where codProd = %d;";
+    $updSql = "UPDATE `productos` set `nomProd` = '%s', `descProd` = '%s', `precioProd` = %d, `imagen` = '%s' where codProd = %d;";
 
     $result = ejecutarNonQuery(
         sprintf(
@@ -73,7 +77,10 @@ function actualizarMantenimiento($data)
             $data["nomProd"],
             $data["descProd"],
             $data["precioProd"],
+            $data["imagen"],
             $data["codProd"]
+            
+
         )
     );
     return $result;

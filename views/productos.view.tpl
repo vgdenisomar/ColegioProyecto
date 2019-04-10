@@ -46,6 +46,7 @@
             <input type="hidden" name="cod" id="cod" value="{{codProd}}"/>
             <h2 style="color:#738AFD">{{nomProd}}</h2>
             <h3 style="color:#fff">{{descProd}}</h3>
+            <img src='http://localhost/webnegocios/ColegioProyecto/image". basename(imagen) ."' />
             <span style="font-size:20px;"class="price">L. {{precioProd}}</span>
             <label style="color:#fff" class="col-5"for="cant">Cantidad:</label>
             <input type="number" style="width:4em;height:2em; margin-left:5.5%;" min="1" max="99999999" step="1" id="cant"

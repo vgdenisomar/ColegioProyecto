@@ -22,6 +22,9 @@
       <div class="carddashboard4 col-l-55 center">
         <li><a href="index.php?page=mantenimientos"><h1>Mantenimientos</h1</a></li>
       </div>
+      <div class="carddashboard1 col-l-55 center">
+        <li><a href="index.php?page=detallesfacturas"><h1>Facturas</h1</a></li>
+      </div>
 
     </ul>
   </div>

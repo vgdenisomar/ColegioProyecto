@@ -122,7 +122,13 @@ case "mantenimiento":
       include_once "controllers/mantenimiento.control.php":
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
     die();
+case "detallesfacturas":
+    ($logged)?
+      include_once "controllers/detallesfacturas.control.php":
+      mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+    die();
 }
+
 
 addToContext("pageRequest", $pageRequest);
 require_once "controllers/error.control.php";
