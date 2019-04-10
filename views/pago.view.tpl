@@ -211,4 +211,11 @@ form{
           });
         });
       </script>
+      {{if haserrores}}
+      <section class="">
+          {{foreach errores}}
+              <div>{{this}}</div>
+          {{endfor errores}}
+      </section>
+      {{endif haserrores}}
 </div>

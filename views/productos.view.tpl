@@ -241,9 +241,9 @@ button{
        </table>
      </div>
      <form action="index.php?page=productos&mode={{mode}}" method="post">
-        <a href="index.php?page=pago"><button class="btn1" type="button" name="btnPagar">Pagar Pedido</button></a>
+        <a href="index.php?page=pago"><button class="btn1" type="button" name="btnPagar">Pagar Donación</button></a>
        &nbsp;
-       <button class="btn2" type="submit" name="btnCancelar">Cancelar Pedido</button>
+       <button class="btn2" type="submit" name="btnCancelar">Cancelar Donación</button>
      </form>
    </div>
    {{endif count}}

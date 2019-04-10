@@ -14,6 +14,7 @@ require_once 'models/productos.model.php';
 function run()
 {
   if(isset($_POST["btnAgregar"])){
+    
     $viewData["carrito"]=obetenerCarrito();
     foreach ($viewData["carrito"] as $registro) {
       if($registro["codProd"]==$_POST["cod"])
