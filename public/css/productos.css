@@ -6,6 +6,7 @@
   body{
     padding: 0px;
     margin: 0px;
+    background-color: #1233;
   }
 
   .productHolder{
@@ -203,4 +204,8 @@ button{
 .btn2:hover{
   background-color: ##ed0000;
   color: white;
+}
+
+div .color{
+
 }

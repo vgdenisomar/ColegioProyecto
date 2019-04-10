@@ -8,8 +8,8 @@
             <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
             <link rel="stylesheet" href="public/css/estilo.css" />
             <link rel="stylesheet" href="PaginaWeb/css/style.css">
-            <link rel="stylesheet" href="public/css/papier.css" />
 
+            <link rel="stylesheet" href="public/css/papier.css" />
             <link rel="stylesheet" href="PaginaWeb/css/grid.css">
             <link rel="stylesheet" href="PaginaWeb/css/hero.css">
             <link rel="stylesheet" href="PaginaWeb/css/fonts.css">

@@ -1,72 +1,72 @@
-
-<br><br><br><br>
-<h1>Catologo de Donaciones</h1>
-<section class="row">
-     {{if count}}
-     <div class="carritoHolder">
-     <div class="carritoItem">
-       <table>
-         <thead>
-           <tr>
-             <th>Nombre</th>
-             <th>Cantidad</th>
-             <th>Precio</th>
-           </tr>
-         </thead>
-        {{foreach carrito}}
-         <tbody>
-           <tr>
-             <td><span>{{nomProd}}</span></td>
-             <td><span> {{cant}}</span></td>
-             <td><span class="precio"> {{precioProd}}</span></td>
-           </tr>
-         </tbody>
-         {{endfor carrito}}
-       </table>
+<div class="prlx2">
+  <h1>Catologo de Donaciones</h1>
+  <section class="row">
+       {{if count}}
+       <div class="carritoHolder">
+       <div class="carritoItem">
+         <table>
+           <thead>
+             <tr>
+               <th>Nombre</th>
+               <th>Cantidad</th>
+               <th>Precio</th>
+             </tr>
+           </thead>
+          {{foreach carrito}}
+           <tbody>
+             <tr>
+               <td><span>{{nomProd}}</span></td>
+               <td><span> {{cant}}</span></td>
+               <td><span class="precio"> {{precioProd}}</span></td>
+             </tr>
+           </tbody>
+           {{endfor carrito}}
+         </table>
+       </div>
+       <form action="index.php?page=productos&mode={{mode}}" method="post">
+          <a href="index.php?page=pago"><button class="btn1" type="button" name="btnPagar">Pagar Donación</button></a>
+         &nbsp;
+         <button class="btn2" type="submit" name="btnCancelar">Cancelar Donación</button>
+       </form>
      </div>
-     <form action="index.php?page=productos&mode={{mode}}" method="post">
-        <a href="index.php?page=pago"><button class="btn1" type="button" name="btnPagar">Pagar Donación</button></a>
-       &nbsp;
-       <button class="btn2" type="submit" name="btnCancelar">Cancelar Donación</button>
-     </form>
-   </div>
-   {{endif count}}
-   <br>
-   <br>
+     {{endif count}}
+     <br>
+     <br>
 
-        <div class="productHolder">
-  {{foreach productos}}
-  <div class="card">
-        <form action="index.php?page=productos&mode={{mode}}" method="POST">
-          <input type="hidden" name="cod" id="cod" value="{{codProd}}"/>
-          <h2 style="color:#738AFD">{{nomProd}}</h2>
-          <h3 style="color:#000">{{descProd}}</h3>
-          <span class="price">L. {{precioProd}}</span>
-          <label class="col-5"for="cant">Cantidad:</label>
-          <input type="number" style="width:4em;height:1em;" min="1" max="99999999" step="1" id="cant"
-            name="cant" value="1"
-            placeholder="Unidades en Inventario" maxlength="8"
-            class="col-7" {{readonly}}/>
-          <br/>
-          <br/>
-          <button type="submit" name="btnAgregar">Agregar</button>
-        </form>
-      </div>
-  {{endfor productos}}
-  <script>
-    $(document).ready(function(){
-      $("#btnCancelar").click(function(e){
-          e.preventDefault();
-          e.stopPropagation();
-          location.assign("index.php?page=productos");
+          <div class="productHolder">
+    {{foreach productos}}
+    <div class="card">
+          <form action="index.php?page=productos&mode={{mode}}" method="POST">
+            <input type="hidden" name="cod" id="cod" value="{{codProd}}"/>
+            <h2 style="color:#738AFD">{{nomProd}}</h2>
+            <h3 style="color:#000">{{descProd}}</h3>
+            <span class="price">L. {{precioProd}}</span>
+            <label class="col-5"for="cant">Cantidad:</label>
+            <input type="number" style="width:4em;height:1em;" min="1" max="99999999" step="1" id="cant"
+              name="cant" value="1"
+              placeholder="Unidades en Inventario" maxlength="8"
+              class="col-7" {{readonly}}/>
+            <br/>
+            <br/>
+            <button type="submit" name="btnAgregar">Agregar</button>
+          </form>
+        </div>
+    {{endfor productos}}
+    <script>
+      $(document).ready(function(){
+        $("#btnCancelar").click(function(e){
+            e.preventDefault();
+            e.stopPropagation();
+            location.assign("index.php?page=productos");
+        });
+        $("#btnAgregar").click(function(e){
+            e.preventDefault();
+            e.stopPropagation();
+            /*Se realize las validaciones adecuadas*/
+            document.forms[0].submit();
+        });
       });
-      $("#btnAgregar").click(function(e){
-          e.preventDefault();
-          e.stopPropagation();
-          /*Se realize las validaciones adecuadas*/
-          document.forms[0].submit();
-      });
-    });
-  </script>
+    </script>
+  </div>
+  </section>
 </div>
-</section>
