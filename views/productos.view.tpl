@@ -1,4 +1,4 @@
-<div class="prlx4">
+<div class="prlx4 pr">
   <h1 class="h11">Catálogo de Donaciones</h1>
   <section class="row">
        {{if count}}

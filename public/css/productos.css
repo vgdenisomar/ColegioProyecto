@@ -5,8 +5,11 @@
 
   body{
     padding: 0px;
-    margin-top: -4%;
   }
+
+.pr{
+      margin-top: -4% !important;
+}
 
   .productHolder{
     display: flex;
