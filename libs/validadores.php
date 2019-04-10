@@ -13,7 +13,7 @@
   }
 
   function isValidText($value){
-    return preg_match("/^[a-zA-Z 'áéíóúüÁÉÍÓÚÜÑñ0-9\-&:]*$/",$value);
+    return preg_match("/^[A-Z]+$/i",$value);
   }
 
   function isValidHNPhone($value)

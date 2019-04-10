@@ -31,11 +31,10 @@ function run()
       $viewData["idDon"]=$_POST["idDon"];
       $viewData["direccionDon"]=$_POST["direccionDon"];
       $viewData["telDon"]=$_POST["telDon"];
-      if (isEmpty("btnProcesar")) {
-        if (isEmpty($_POST["nomDon"])) {
-            $viewData["haserrores"] = true;
-            $viewData["errores"][] = "Nombre no se puede dejar vacio";
-        }
+
+      if (isEmpty($_POST["nomDon"])) {
+          $viewData["haserrores"] = true;
+          $viewData["errores"][] = "Nombre no se puede dejar vacio";
       }
       if (isEmpty($_POST["idDon"])) {
           $viewData["haserrores"] = true;
@@ -55,7 +54,11 @@ function run()
       }
       if (!isValidNum($_POST["telDon"])) {
           $viewData["haserrores"] = true;
-          $viewData["errores"][] = "Identidad solo puede ser numeros";
+          $viewData["errores"][] = "Telefono solo puede ser numeros";
+      }
+      if (!isValidText($_POST["nomDon"])) {
+          $viewData["haserrores"] = true;
+          $viewData["errores"][] = "En el nombre solo ingrese letras";
       }
       if (!$viewData["haserrores"]) {
           /// llamamos al modelo de datos para insertar el producto

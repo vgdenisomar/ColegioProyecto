@@ -38,7 +38,7 @@
       <div class="row">
         <label class="col-5" for="idDon">Identidad: </label>
         <input type="text" id="idDon" name="idDon" value="{{idDon}}"
-          placeholder="Ingrese su identidad" maxlength="128"
+          placeholder="Ingrese su identidad" maxlength="13"
             class="col-5" {{readonly}}/>
       </div>
       <div class="row">
@@ -50,7 +50,7 @@
       <div class="row">
         <label class="col-5" for="telDon">Telefono</label>
         <input type="text" id="telDon" name="telDon" value="{{telDon}}"
-          placeholder="Ingrese su numero de telefono" maxlength="128"
+          placeholder="Ingrese su numero de telefono" maxlength="8"
             class="col-5" {{readonly}}/>
       </div>
       <br>
