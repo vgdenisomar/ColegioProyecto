@@ -1,3 +1,4 @@
+
 <h1>{{modeDsc}}</h1>
 <section class="row">
   <form action="index.php?page=mantenimiento&mode={{mode}}&codProd={{codProd}}" 
@@ -11,6 +12,15 @@
           placeholder="Nombre del Producto" maxlength="128"
             class="col-7" {{readonly}}/>
       </div>
+
+    
+      <div class="row">
+        <label class="col-5" method="POST" enctype="multipart/form-data">
+        <label  for="imagen">Imagen </label>
+        <input type="file" name="imagen" id="imagen" value="{{imagen}}"/>
+        <img src='http://localhost/webnegocios/ColegioProyecto/image". basename(imagen) ."' />
+      </div>
+
       <div class="row">
       <label class="col-5" for="precioProd">Precio</label>
       <input type="number" min="0" max="99999999" id="precioProd" 

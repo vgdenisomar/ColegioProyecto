@@ -31,6 +31,7 @@ function run()
     $viewData["nomProd"] = "";
     $viewData["descProd"] = "";
     $viewData["precioProd"] = "";
+    $viewData["imagen"] = "";
 
     if ($_SERVER["REQUEST_METHOD"] === "GET") {
         if (isset($_GET["mode"])) {
@@ -92,7 +93,7 @@ function run()
             case 'INS':
                 $viewData["modeDsc"] = "Nuevo Producto";
                 $viewData["isinsert"] = true;
-                if (isEmpty($_POST["nomProd"])||isEmpty($_POST["descProd"])||isEmpty($_POST["precioProd"])) {
+                if (isEmpty($_POST["nomProd"])||isEmpty($_POST["descProd"])||isEmpty($_POST["precioProd"])||isEmpty($_POST["imagen"])) {
                     $viewData["haserrores"] = true;
                     $viewData["errores"][] = "No se pudo agregar el producto, llene todos los campos.";
                 }

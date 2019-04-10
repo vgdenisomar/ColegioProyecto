@@ -24,14 +24,17 @@ function obtenerMantenimientos()
  */
 function agregarNuevoMantenimiento($data)
 {
-    $insSql = "INSERT INTO `productos` (`nomProd`, `descProd`, `precioProd`) VALUES ('%s','%s',%d);";
+    $insSql = "INSERT INTO `productos` (`nomProd`, `descProd`, `precioProd`, `imagen`) VALUES ('%s','%s',%d'%s');";
 
     $result = ejecutarNonQuery(
         sprintf(
             $insSql,
             $data["nomProd"],
             $data["descProd"],
-            $data["precioProd"]
+            $data["precioProd"],
+            $data["imagen"]
+            
+
         )
     );
     if ($result) {
