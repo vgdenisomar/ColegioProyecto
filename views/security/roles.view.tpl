@@ -1,5 +1,5 @@
 
-<div class="row depth-1 m-padding backgroundcolor">
+<div class="row depth-1 m-padding backgroundcolor4">
 <h1>
   Gestión de Roles
 </h1>
@@ -8,18 +8,18 @@
         <label class="col-md-1" for="fltDsc">Roles:&nbsp;</label>
         <input type="text" name="fltDsc"  class="col-md-8"
               id="fltDsc" placeholder="Codigo de roles" value="{{fltDsc}}" />
-        <button class="col-md-3" id="btnFiltro"><span class="ion-refresh">&nbsp;Actualizar</span></button>
+        <button class="col-md-3 background" id="btnFiltro"><span class="ion-refresh">&nbsp;Actualizar</span></button>
       </div>
   </form>
 </div>
 <div class="row depth-1">
   <table class="col-md-12">
-    <thead>
+    <thead style="background-color:black;">
       <tr>
-        <th>Código</th>
-        <th>Nombre</th>
-        <th class="sd-hide">Estado</th>
-        <th><a href="index.php?page=rol&rolescod&mode=INS" class="btn depth-1 s-margin">
+        <th style="color:white;">Código</th>
+        <th style="color:white;">Nombre</th>
+        <th style="color:white;" class="sd-hide">Estado</th>
+        <th><a style="color:gray;"href="index.php?page=rol&rolescod&mode=INS" class="btn depth-1 s-margin">
           <span class="ion-plus-circled"></span>
           </a></th>
       </tr>

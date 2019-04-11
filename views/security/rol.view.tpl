@@ -1,9 +1,8 @@
 
-<div class="row depth-1 m-padding backgroundcolor">
-  <h1>Gestión de Rol</h1>
-  <h2>{{modeDesc}}</h2>
+<div class="row depth-1 m-padding backgroundcolor4">
+  <h1>{{modeDesc}}</h1>
 </div>
-<div class="row depth-1 m-padding backgroundcolor2">
+<div class="row depth-1 m-padding backgroundcolor3">
   {{if haserrores}}
     <ul class="alert alert-danger depth-1 m-padding" style="list-style:none;">
       {{foreach errores}}
@@ -38,19 +37,19 @@
     <div class="row s-padding">
       <div class="col-md-12 right">
         {{ifnot readonly}}
-        <button id="btnConfirm"><span class="icon "></span>Confirmar</button>
+        <button class="background" id="btnConfirm"><span class="icon "></span>Confirmar</button>
         {{endifnot readonly}}
-        <button id="btnCancel">Cancelar</button>
+        <button class="backgroundrojo" id="btnCancel">Cancelar</button>
       </div>
     </div>
     </div>
   </form>
 </div>
 {{ifnot isinsert}}
-<div class="row depth-1 m-padding backgroundcolor">
-  <h2>Programas Por Rol</h2>
+<div class="row depth-1 m-padding backgroundcolor4">
+  <h1>Programas Por Rol</h1>
 </div>
-<div class="row depth-1 m-padding backgroundcolor2">
+<div class="row depth-1 m-padding backgroundcolor3">
   <table class="col-sm-8 col-sm-offset-2 col-md-6 col-offset-3">
     <thead>
 

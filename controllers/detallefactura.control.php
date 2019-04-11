@@ -13,9 +13,10 @@
       $filter = $_POST["fltFact"];
       $_SESSION["programas_context"] = array("filter"=>$filter);
     }
-    $data["fltFact"] = $filter;
-    $data["detallesfacturas"] = obtenerFacPorCodigo($filter,'%');
-    renderizar("detallesfacturas", $data );
+    $data["codFac"] =  $_GET["codFac"];
+    $data["detallesfacturas"] = obtenerDetallePorCodigo($data["codFac"],'%');
+    renderizar("detallefactura", $data );
 }
   run();
+
 ?>

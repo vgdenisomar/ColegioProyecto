@@ -1,5 +1,5 @@
 
-<div class="row depth-1 m-padding backgroundcolor">
+<div class="row depth-1 m-padding backgroundcolor4">
   <h1>
     Gestión de Funciones
   </h1>
@@ -8,19 +8,19 @@
         <label class="col-md-1" for="fltNombre">Buscar:&nbsp;</label>
         <input type="text" name="fltNombre"  class="col-md-8"
               id="fltNombre" placeholder="Código de la función" value="{{fltNombre}}" />
-        <button class="col-md-3" id="btnFiltro"><span class="ion-refresh">&nbsp;Actualizar</span></button>
+        <button class="col-md-3 background" id="btnFiltro"><span class="ion-refresh">&nbsp;Actualizar</span></button>
       </div>
   </form>
 </div>
 <div class="row depth-1">
   <table class="col-md-12">
-    <thead>
+    <thead style="background-color:black;">
       <tr>
-        <th>Código</th>
-        <th>Descripción</th>
-        <th class="sd-hide">Estado</th>
-        <th class="sd-hide">Tipo</th>
-        <th><a href="index.php?page=programa&fncod=&mode=INS" class="btn depth-1 s-margin">
+        <th style="color:white;">Código</th>
+        <th style="color:white;">Descripción</th>
+        <th style="color:white;" class="sd-hide">Estado</th>
+        <th style="color:white;" class="sd-hide">Tipo</th>
+        <th><a style="color:gray;" href="index.php?page=programa&fncod=&mode=INS" class="btn depth-1 s-margin">
           <span class="ion-plus-circled"></span>
           </a></th>
       </tr>

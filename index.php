@@ -127,6 +127,11 @@ case "detallesfacturas":
       include_once "controllers/detallesfacturas.control.php":
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
     die();
+case "detallefactura":
+    ($logged)?
+      include_once "controllers/detallefactura.control.php":
+      mw_redirectToLogin($_SERVER["QUERY_STRING"]);
+    die();
 }
 
 
