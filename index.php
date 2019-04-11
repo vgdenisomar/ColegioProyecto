@@ -107,11 +107,6 @@ case "productos":
       include_once "controllers/productos.control.php":
       mw_redirectToLogin($_SERVER["QUERY_STRING"]);
     die();
-case "producto":
-    ($logged)?
-      include_once "controllers/producto.control.php":
-      mw_redirectToLogin($_SERVER["QUERY_STRING"]);
-    die();
 case "mantenimientos":
     ($logged)?
       include_once "controllers/mantenimientos.control.php":

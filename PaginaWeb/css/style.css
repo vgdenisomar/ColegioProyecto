@@ -223,6 +223,14 @@ img{
 
 }
 
+.catologo{
+  width: 255px;
+  height: 150px;
+  position:relative;
+  padding: 0px
+
+}
+
 nav ul li a:hover{
 }
 
