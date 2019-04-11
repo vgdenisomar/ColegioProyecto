@@ -15,12 +15,12 @@
 
 
       <div class="row">
-<<<<<<< HEAD
+
         <label class="col-5" for="imagen">Imagen </label>
-=======
+
         <label class="col-4 left" method="POST" enctype="multipart/form-data">
         <label  for="imagen">Imagen </label>
->>>>>>> 5dd46f16fc80f5a85d7f0f1e58635437bdf0faad
+
         <input type="file" name="imagen" id="imagen" value="{{imagen}}" {{readonly}}/>
       </div>
 
