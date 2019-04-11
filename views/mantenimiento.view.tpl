@@ -1,8 +1,8 @@
 
 <section class="row backgroundcolor">
   <h1>{{modeDsc}}</h1>
-  <form action="index.php?page=mantenimiento&mode={{mode}}&codProd={{codProd}}"
-      method="POST" class="col-8 col-offset-2">
+  <form action="index.php?page=mantenimiento&mode={{mode}}&codProd={{codProd}} "
+     method="POST" enctype="multipart/form-data" class="col-8 col-offset-2">
       <input type="hidden" name="codProd" value="{{codProd}}" />
       <input type="hidden" name="tocken" value="{{tocken}}" />
       <input type="hidden" name="mode" value="{{mode}}" />
@@ -15,10 +15,8 @@
 
 
       <div class="row">
-        <label class="col-5" method="POST" enctype="multipart/form-data">
-        <label  for="imagen">Imagen </label>
+        <label class="col-5" for="imagen">Imagen </label>
         <input type="file" name="imagen" id="imagen" value="{{imagen}}" {{readonly}}/>
-        <img src='http://localhost/webnegocios/ColegioProyecto/image". basename(imagen) ."' />
       </div>
 
       <div class="row">

@@ -36,7 +36,7 @@ function agregarNuevoMantenimiento($data)
             $data["nomProd"],
             $data["descProd"],
             $data["precioProd"],
-            $data["imagen"]
+            $data["tfil"]
             
 
         )
@@ -77,10 +77,8 @@ function actualizarMantenimiento($data)
             $data["nomProd"],
             $data["descProd"],
             $data["precioProd"],
-            $data["imagen"],
+            $data["tfil"],
             $data["codProd"]
-            
-
         )
     );
     return $result;

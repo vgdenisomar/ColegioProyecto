@@ -91,9 +91,19 @@ function run()
             switch($viewData["mode"])
             {
             case 'INS':
+              if(isset($_FILES["imagen"])){
+                $udir = "image/";
+                $fname = basename($_FILES["imagen"]["name"]);
+                $fsize = $_FILES["imagen"]["size"];
+                $tfil =  $udir.($fname);
+                $_POST["tfil"]=$tfil;
+                move_uploaded_file($_FILES["imagen"]["tmp_name"], $tfil);
+              }
+
                 $viewData["modeDsc"] = "Nuevo Producto";
                 $viewData["isinsert"] = true;
-                if (isEmpty($_POST["nomProd"])||isEmpty($_POST["descProd"])||isEmpty($_POST["precioProd"])||isEmpty($_POST["imagen"])) {
+
+                if (isEmpty($_POST["nomProd"])||isEmpty($_POST["descProd"])||isEmpty($_POST["precioProd"])||isEmpty($_POST["tfil"])) {
                     $viewData["haserrores"] = true;
                     $viewData["errores"][] = "No se pudo agregar el producto, llene todos los campos.";
                 }
@@ -104,6 +114,14 @@ function run()
                     }
                 break;
             case 'UPD':
+            if(isset($_FILES["imagen"])){
+                $udir = "image/";
+                $fname = basename($_FILES["imagen"]["name"]);
+                $fsize = $_FILES["imagen"]["size"];
+                $tfil =  $udir.($fname);
+                $_POST["tfil"]=$tfil;
+                move_uploaded_file($_FILES["imagen"]["tmp_name"], $tfil);
+              }
                 $result = actualizarMantenimiento($_POST);
                 if ($result) {
                     redirectWithMessage("Producto Actualizado Satisfactorimente", "index.php?page=mantenimientos");
